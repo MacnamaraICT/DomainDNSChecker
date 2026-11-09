@@ -28,6 +28,7 @@
   }
 }
 * { box-sizing: border-box; }
+html { scrollbar-gutter: stable; }
 body { margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.45 "Segoe UI Variable", "Segoe UI", system-ui, sans-serif; }
 .mono { font-family: var(--mono); }
 .small { font-size: 12px; }
@@ -123,7 +124,7 @@ tr:hover td { background: color-mix(in srgb, var(--muted) 50%, transparent); }
 .w-name { width: 24%; } .w-type { width: 64px; } .w-ttl { width: 104px; } .w-res { width: 22%; } .w-svc { width: 200px; }
 .ttl { white-space: nowrap; word-break: normal; }
 
-.site-footer { max-width: 1280px; margin: 0 auto; padding: 16px 20px 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted-fg); text-align: center; }
+.site-footer { flex: none; width: 100%; max-width: 1280px; margin: 0 auto; padding: 16px 20px 20px; border-top: 1px solid var(--border); font: 400 12px/1.45 "Segoe UI Variable", "Segoe UI", system-ui, sans-serif; letter-spacing: normal; color: var(--muted-fg); text-align: center; }
 body { min-height: 100vh; display: flex; flex-direction: column; } .page { flex: 1; width: 100%; }
 </style>
 </head>
@@ -916,7 +917,7 @@ var DnsAnalysis = (() => {
 })();
 
 
-DnsAnalysis.RESOLVERS.splice(0, DnsAnalysis.RESOLVERS.length, { id: "quad9", label: "Quad9 (9.9.9.9)", ip: "9.9.9.9" }, { id: "google", label: "Google (8.8.8.8)", ip: "8.8.8.8" }, { id: "cloudflare", label: "Cloudflare (1.1.1.1)", ip: "1.1.1.1" });
+DnsAnalysis.RESOLVERS.splice(0, DnsAnalysis.RESOLVERS.length, { id: "google", label: "Google (8.8.8.8)", ip: "8.8.8.8" }, { id: "quad9", label: "Quad9 (9.9.9.9)", ip: "9.9.9.9" }, { id: "cloudflare", label: "Cloudflare (1.1.1.1)", ip: "1.1.1.1" });
 
 </script>
 <script>
@@ -1139,6 +1140,7 @@ ${logoDataUri ? `<link rel="icon" type="image/png" href="${logoDataUri}">` : ""}
   --pass-bg:#dcfce7; --pass-fg:#14532d; --pass-dot:#16a34a; --warn-bg:#fef3c7; --warn-fg:#78350f; --warn-dot:#f59e0b;
   --fail-bg:#fee2e2; --fail-fg:#7f1d1d; --fail-dot:#dc2626; --info-bg:#dbeafe; --info-fg:#1e3a8a; --info-dot:#2563eb; }
 * { box-sizing: border-box; }
+html { scrollbar-gutter: stable; }
 body { margin: 0; color: var(--fg); background: #fff; font: 14px/1.5 "Segoe UI Variable","Segoe UI",system-ui,sans-serif; }
 .wrap { max-width: 1000px; margin: 0 auto; padding: 0 28px 28px; }
 header.band { background: var(--brand); color: var(--brand-fg); padding: 22px 0; margin-bottom: 24px; }
@@ -1177,7 +1179,7 @@ td.status { width: 104px; } td.check { width: 190px; font-weight: 600; }
 .badge.info { background: var(--info-bg); color: var(--info-fg); } .badge.info .dot { background: var(--info-dot); }
 ol.actions { margin: 0; padding-inline-start: 22px; } ol.actions li { margin: 6px 0; }
 .note { font-size: 12px; color: var(--muted); }
-footer { border-top: 1px solid var(--border); margin-top: 32px; padding: 14px 0; font-size: 12px; color: var(--muted); text-align: center; }
+footer.site-footer { width: 100%; max-width: 1000px; margin: 32px auto 0; padding: 16px 28px 20px; border-top: 1px solid var(--border); font: 400 12px/1.45 "Segoe UI Variable","Segoe UI",system-ui,sans-serif; letter-spacing: normal; color: var(--muted); text-align: center; }
 @media screen and (prefers-color-scheme: dark) {
   :root { --fg:#f3f7f8; --muted:#a7b8c2; --border:#2a3d4a; --soft:#1d2e39; --primary:#5fb3bb;
     --pass-bg:#052e16; --pass-fg:#bbf7d0; --warn-bg:#451a03; --warn-fg:#fde68a; --fail-bg:#450a0a; --fail-fg:#fecaca; --info-bg:#172554; --info-fg:#bfdbfe; }
@@ -1186,6 +1188,7 @@ footer { border-top: 1px solid var(--border); margin-top: 32px; padding: 14px 0;
 @media (max-width: 760px) { .overview { grid-template-columns: 1fr 1fr; } }
 @media print {
   body { font-size: 11px; } .wrap { max-width: none; padding: 0 12mm; }
+  footer.site-footer { max-width: none; padding: 16px 12mm 0; }
   header.band, .badge, .tile.overall { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   h2 { break-after: avoid; } tr { break-inside: avoid; }
   @page { margin: 12mm 0; }
@@ -1243,7 +1246,7 @@ ${missing.length ? `<h3>Not found</h3><p class="mono">${missing.map((x) => `${es
 <p class="note">TTLs are as reported by ${esc(resolver)}: the time left before its cached copy expires, so they can be lower than the TTL set on the record. DKIM selectors and subdomains are checked against common names only; services using custom selectors or hostnames may not appear.</p>
 </section>
 </main>
-<footer>Copyright ${year} ${COMPANY}</footer>
+<footer class="site-footer">Copyright ${year} ${COMPANY}</footer>
 </body>
 </html>`;
   }
@@ -1525,7 +1528,6 @@ ${missing.length ? `<h3>Not found</h3><p class="mono">${missing.map((x) => `${es
       h("h1", {}, h("span", { class: "mono" }, report.domain), h("span", { class: "meta" }, `${report.queryCount} queries · ${A.resolverLabel(report.resolver)} · ${new Date(report.ranAt).toLocaleString()}`)),
       h("div", { class: "actions" },
         h("button", { class: "btn sm primary", type: "button", onclick: healthReport }, "Domain Health report"),
-        h("button", { class: "btn sm", type: "button", onclick: copyReport }, "Copy report"),
         h("button", { class: "btn sm", type: "button", onclick: exportCsv }, "Export CSV"))));
 
     root.append(h("div", { class: "overview" },
@@ -1567,11 +1569,6 @@ ${missing.length ? `<h3>Not found</h3><p class="mono">${missing.map((x) => `${es
     root.append(panel);
   }
 
-  async function copyReport() {
-    if (!state.report) return;
-    try { await window.dnsApi.copy(A.toText(state.report)); toast("Report copied"); }
-    catch { toast("Could not copy to clipboard"); }
-  }
   async function healthReport() {
     if (!state.report) return;
     const R = window.DnsHealthReport;
