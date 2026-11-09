@@ -1,0 +1,1598 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Domain DNS Checker</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,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" />
+  <link rel="apple-touch-icon" href="data:image/png;base64,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" />
+  <style>
+:root {
+  --bg: #ffffff; --fg: #0f1e2a; --card: #ffffff; --muted: #f1f5f6; --muted-fg: #4b5f6b;
+  --border: #dbe4e7; --primary: #2b6f77; --primary-fg: #ffffff; --ring: #2b6f77;
+  --brand-bar: #1a344c; --brand-fg: #fdfbed;
+  --ok-bg: #dcfce7; --ok-fg: #14532d; --ok-dot: #16a34a;
+  --warn-bg: #fef3c7; --warn-fg: #78350f; --warn-dot: #f59e0b;
+  --err-bg: #fee2e2; --err-fg: #7f1d1d; --err-dot: #dc2626;
+  --info-bg: #dbeafe; --info-fg: #1e3a8a; --info-dot: #2563eb;
+  --none-dot: #94a3ab;
+  --mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1b24; --fg: #f3f7f8; --card: #16252f; --muted: #1d2e39; --muted-fg: #a7b8c2;
+    --border: #2a3d4a; --primary: #5fb3bb; --primary-fg: #0b2228; --ring: #5fb3bb;
+    --ok-bg: #052e16; --ok-fg: #bbf7d0; --warn-bg: #451a03; --warn-fg: #fde68a;
+    --err-bg: #450a0a; --err-fg: #fecaca; --info-bg: #172554; --info-fg: #bfdbfe;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.45 "Segoe UI Variable", "Segoe UI", system-ui, sans-serif; }
+.mono { font-family: var(--mono); }
+.small { font-size: 12px; }
+.muted { color: var(--muted-fg); }
+:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 12px; top: 12px; z-index: 50; background: var(--bg); padding: 8px 12px; border-radius: 6px; }
+
+.topbar { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 8px; height: 48px; padding: 0 20px; border-bottom: 1px solid var(--brand-bar); background: var(--brand-bar); color: var(--brand-fg); }
+.logo { display: block; width: 32px; height: 32px; }
+.brand { font-weight: 600; font-size: 14px; }
+
+.page { max-width: 1280px; margin: 0 auto; padding: 20px; display: flex; flex-direction: column; gap: 20px; }
+.lookup .row { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 8px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field.grow { flex: 1; min-width: 240px; }
+label { font-size: 12px; font-weight: 500; }
+.input { height: 40px; padding: 0 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); color: var(--fg); font-size: 14px; }
+select.input { min-width: 200px; }
+.btn { height: 40px; padding: 0 18px; border-radius: 8px; border: 1px solid var(--border); background: var(--card); color: var(--fg); font-weight: 500; cursor: pointer; font-size: 13px; }
+.btn.primary { background: var(--primary); color: var(--primary-fg); border-color: var(--primary); }
+.btn.sm { height: 32px; padding: 0 12px; }
+.btn:disabled { opacity: .6; cursor: progress; }
+.err { color: var(--err-dot); margin: 8px 0 0; font-size: 13px; }
+.extras { margin-top: 10px; }
+.extras summary { cursor: pointer; font-size: 12px; font-weight: 500; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding-top: 10px; }
+
+.progress { display: flex; align-items: center; gap: 12px; }
+.bar { width: 360px; height: 6px; border-radius: 3px; background: var(--muted); overflow: hidden; }
+#bar-fill { height: 100%; width: 0; background: var(--primary); transition: width .15s; }
+
+#results { display: flex; flex-direction: column; gap: 20px; outline: none; }
+.intro { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; padding: 24px; border: 1px dashed var(--border); border-radius: 8px; }
+.intro h2 { font-size: 14px; margin: 0; }
+.intro p { margin: 4px 0 0; font-size: 12px; color: var(--muted-fg); }
+
+.head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+.head h1 { margin: 0; font-size: 18px; }
+.head .meta { font-size: 12px; font-weight: 400; color: var(--muted-fg); margin-left: 8px; }
+.actions { display: flex; gap: 8px; }
+
+.overview { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 20px; }
+figure { margin: 0; min-width: 0; }
+figcaption, .h2 { font-size: 13px; font-weight: 500; margin: 0 0 8px; }
+.map { border: 1px solid var(--border); border-radius: 8px; background: var(--card); overflow-x: auto; }
+.map svg { width: 100%; min-width: 640px; display: block; }
+.map text { font-family: inherit; }
+.findings { list-style: none; margin: 0; padding: 0; border: 1px solid var(--border); border-radius: 8px; }
+.findings li + li { border-top: 1px solid var(--border); }
+.findings button { width: 100%; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding: 10px 12px; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.findings button:hover { background: var(--muted); }
+.findings .k { font-weight: 500; }
+
+.badge { display: inline-flex; align-items: center; gap: 6px; max-width: 100%; padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 500; border: 1px solid transparent; }
+.badge .dot { width: 6px; height: 6px; border-radius: 50%; flex: none; }
+.badge.success { background: var(--ok-bg); color: var(--ok-fg); } .badge.success .dot { background: var(--ok-dot); }
+.badge.warning { background: var(--warn-bg); color: var(--warn-fg); } .badge.warning .dot { background: var(--warn-dot); }
+.badge.error { background: var(--err-bg); color: var(--err-fg); } .badge.error .dot { background: var(--err-dot); }
+.badge.info { background: var(--info-bg); color: var(--info-fg); } .badge.info .dot { background: var(--info-dot); }
+.badge.neutral { background: var(--muted); color: var(--fg); } .badge.neutral .dot { background: var(--none-dot); }
+@media (forced-colors: active) { .badge { border-color: CanvasText; } .badge .dot { background: CanvasText !important; } }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.tabsbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; }
+.tabs { display: inline-flex; flex-wrap: wrap; gap: 2px; padding: 3px; border-radius: 8px; background: var(--muted); }
+.tabs button { border: 0; background: none; color: var(--muted-fg); padding: 6px 12px; border-radius: 6px; font: inherit; font-size: 13px; font-weight: 500; cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--card); color: var(--fg); box-shadow: 0 1px 2px rgb(0 0 0 / .1); }
+.toggle { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; }
+.panel { display: flex; flex-direction: column; gap: 16px; margin-top: 12px; }
+
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; font-size: 12px; font-weight: 500; color: var(--muted-fg); padding: 8px; border-bottom: 1px solid var(--border); }
+td { padding: 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+tr:hover td { background: color-mix(in srgb, var(--muted) 50%, transparent); }
+.val { font-family: var(--mono); font-size: 12px; word-break: break-all; }
+.sub { font-size: 12px; color: var(--muted-fg); margin-top: 2px; }
+
+.cards2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.card { border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+.card .top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.card h3 { margin: 0; font-size: 14px; }
+.code { margin: 8px 0 0; padding: 8px; border-radius: 6px; background: var(--muted); font-family: var(--mono); font-size: 12px; word-break: break-all; }
+.kv { display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; margin: 8px 0 0; font-family: var(--mono); font-size: 12px; }
+.kv dt { font-weight: 600; } .kv dd { margin: 0; word-break: break-all; }
+.incl { list-style: none; margin: 8px 0 0; padding: 0; font-size: 12px; }
+.incl li { display: flex; justify-content: space-between; gap: 12px; padding: 2px 0; }
+
+.toast { position: fixed; bottom: 20px; right: 20px; padding: 10px 14px; border-radius: 8px; background: var(--fg); color: var(--bg); font-size: 13px; }
+
+@media (max-width: 1000px) { .overview, .cards2, .grid2 { grid-template-columns: 1fr; } .intro { grid-template-columns: 1fr 1fr; } }
+.w-name { width: 24%; } .w-type { width: 64px; } .w-ttl { width: 104px; } .w-res { width: 22%; } .w-svc { width: 200px; }
+.ttl { white-space: nowrap; word-break: normal; }
+
+.site-footer { max-width: 1280px; margin: 0 auto; padding: 16px 20px 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted-fg); text-align: center; }
+body { min-height: 100vh; display: flex; flex-direction: column; } .page { flex: 1; width: 100%; }
+</style>
+</head>
+<body>
+  <a class="skip" href="#results">Skip to results</a>
+  <header class="topbar">
+    <img class="logo" src="data:image/png;base64,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" alt="" width="32" height="32" />
+    <span class="brand">Domain DNS Checker</span>
+  </header>
+
+  <main class="page">
+    <form id="lookup" class="lookup" aria-label="Domain lookup" novalidate>
+      <div class="row">
+        <div class="field grow">
+          <label for="domain">Domain</label>
+          <input id="domain" class="input mono" placeholder="contoso.com" autocomplete="off" spellcheck="false" />
+        </div>
+        <div class="field">
+          <label for="resolver">Resolver</label>
+          <select id="resolver" class="input"></select>
+        </div>
+        <button id="run" type="submit" class="btn primary">Check DNS</button>
+      </div>
+      <p id="domain-err" class="err" role="alert" hidden></p>
+      <details class="extras">
+        <summary>Extra selectors and subdomains</summary>
+        <div class="grid2">
+          <div class="field">
+            <label for="sel" id="sel-label">Additional DKIM selectors</label>
+            <input id="sel" class="input mono" placeholder="s1, mte1, pm2024" />
+          </div>
+          <div class="field">
+            <label for="hosts" id="hosts-label">Additional subdomains</label>
+            <input id="hosts" class="input mono" placeholder="em1234, url5678, intranet" />
+          </div>
+        </div>
+      </details>
+    </form>
+
+    <div id="progress" class="progress" role="status" aria-live="polite" hidden>
+      <div class="bar"><div id="bar-fill"></div></div>
+      <span id="progress-text" class="small"></span>
+    </div>
+
+    <section id="results" tabindex="-1" aria-label="Results"></section>
+  </main>
+  <footer class="site-footer">Copyright <span id="copy-year"></span> Macnamara ICT Limited</footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+/* Browser DNS layer: DNS-over-HTTPS — JSON API for Google/Cloudflare, RFC 8484 wire format for Quad9. Provides window.dnsApi. */
+(() => {
+  const ENDPOINTS = { "8.8.8.8": "https://dns.google/resolve", "1.1.1.1": "https://cloudflare-dns.com/dns-query" };
+  const TYPE_NAME = { 1: "A", 2: "NS", 5: "CNAME", 6: "SOA", 15: "MX", 16: "TXT", 28: "AAAA", 33: "SRV", 257: "CAA" };
+  const trimDot = (s) => String(s).replace(/\.$/, "");
+  function txt(d) {
+    const t = d.trim();
+    if (!t.startsWith('"')) return t;
+    const parts = t.match(/"((?:[^"\\]|\\.)*)"/g);
+    return parts ? parts.map((p) => p.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, "\\")).join("") : t;
+  }
+  function caa(d) {
+    const m = d.trim().match(/^\\#\s+\d+\s+([0-9a-fA-F\s]+)$/);
+    if (!m) return d;
+    const b = m[1].replace(/\s+/g, "").match(/../g).map((x) => parseInt(x, 16));
+    const tl = b[1];
+    return `${b[0]} ${String.fromCharCode(...b.slice(2, 2 + tl))} "${String.fromCharCode(...b.slice(2 + tl))}"`;
+  }
+
+  /* ---- RFC 8484 wire format (used for Quad9, which no longer offers a JSON API) ---- */
+  const TYPE_NUM = { A: 1, NS: 2, CNAME: 5, SOA: 6, MX: 15, TXT: 16, AAAA: 28, SRV: 33, CAA: 257 };
+  function encodeQuery(name, type) {
+    const labels = name.replace(/\.$/, "").split(".");
+    const bytes = [0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0];
+    for (const l of labels) { const b = new TextEncoder().encode(l); bytes.push(b.length, ...b); }
+    const t = TYPE_NUM[type];
+    bytes.push(0, t >> 8, t & 255, 0, 1);
+    let bin = ""; for (const b of bytes) bin += String.fromCharCode(b);
+    return btoa(bin).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  }
+  function readName(v, off) {
+    const parts = []; let jumped = false, end = off, guard = 0;
+    while (guard++ < 128) {
+      const len = v.getUint8(off);
+      if (len === 0) { if (!jumped) end = off + 1; break; }
+      if ((len & 0xc0) === 0xc0) { if (!jumped) end = off + 2; off = ((len & 0x3f) << 8) | v.getUint8(off + 1); jumped = true; continue; }
+      let label = ""; for (let i = 1; i <= len; i++) label += String.fromCharCode(v.getUint8(off + i));
+      parts.push(label); off += len + 1;
+    }
+    return { name: parts.join("."), end };
+  }
+  function ipv6(v, o) {
+    const g = []; for (let i = 0; i < 8; i++) g.push(v.getUint16(o + i * 2).toString(16));
+    let bs = -1, bl = 0;
+    for (let i = 0; i < 8;) { if (g[i] === "0") { let j = i; while (j < 8 && g[j] === "0") j++; if (j - i > bl && j - i > 1) { bs = i; bl = j - i; } i = j; } else i++; }
+    if (bs < 0) return g.join(":");
+    return `${g.slice(0, bs).join(":")}::${g.slice(bs + bl).join(":")}`;
+  }
+  function decodeMessage(buf) {
+    const v = new DataView(buf); const u8 = new Uint8Array(buf);
+    const status = v.getUint16(2) & 0x0f;
+    const qd = v.getUint16(4), an = v.getUint16(6);
+    let off = 12;
+    for (let i = 0; i < qd; i++) off = readName(v, off).end + 4;
+    const answers = [];
+    for (let i = 0; i < an; i++) {
+      const n = readName(v, off); off = n.end;
+      const type = v.getUint16(off), ttl = v.getUint32(off + 4), rdlen = v.getUint16(off + 8);
+      const rd = off + 10; off = rd + rdlen;
+      const t = TYPE_NAME[type]; if (!t) continue;
+      let data = "";
+      if (t === "A") data = [0, 1, 2, 3].map((k) => u8[rd + k]).join(".");
+      else if (t === "AAAA") data = ipv6(v, rd);
+      else if (t === "CNAME" || t === "NS") data = readName(v, rd).name;
+      else if (t === "MX") data = `${v.getUint16(rd)} ${readName(v, rd + 2).name}`;
+      else if (t === "SRV") data = `${v.getUint16(rd)} ${v.getUint16(rd + 2)} ${v.getUint16(rd + 4)} ${readName(v, rd + 6).name}`;
+      else if (t === "TXT") { let p = rd; const dec = new TextDecoder(); while (p < rd + rdlen) { const l = u8[p]; data += dec.decode(u8.slice(p + 1, p + 1 + l)); p += l + 1; } }
+      else if (t === "CAA") { const tl = u8[rd + 1]; const dec = new TextDecoder(); data = `${u8[rd]} ${dec.decode(u8.slice(rd + 2, rd + 2 + tl))} "${dec.decode(u8.slice(rd + 2 + tl, rd + rdlen))}"`; }
+      else if (t === "SOA") { const m = readName(v, rd); const r = readName(v, m.end); const q = r.end; data = `${m.name} ${r.name} ${[0, 4, 8, 12, 16].map((k) => v.getUint32(q + k)).join(" ")}`; }
+      answers.push({ name: n.name, type: t, ttl, data });
+    }
+    return { status, answers };
+  }
+  async function wireQuery(base, name, type) {
+    try {
+      const res = await fetch(`${base}?dns=${encodeQuery(name, type)}`, { headers: { accept: "application/dns-message" }, cache: "no-store" });
+      if (!res.ok) return { status: -1, answers: [], error: `HTTP ${res.status}` };
+      return decodeMessage(await res.arrayBuffer());
+    } catch (e) {
+      return { status: -1, answers: [], error: "Network request blocked or offline" };
+    }
+  }
+
+  async function query(name, type, server) {
+    if (server === "9.9.9.9") return wireQuery("https://dns.quad9.net/dns-query", name, type);
+    const base = ENDPOINTS[server] || ENDPOINTS["8.8.8.8"];
+    try {
+      const res = await fetch(`${base}?name=${encodeURIComponent(name)}&type=${type}`, { headers: { accept: "application/dns-json" }, cache: "no-store" });
+      if (!res.ok) return { status: -1, answers: [], error: `HTTP ${res.status}` };
+      const j = await res.json();
+      return {
+        status: j.Status,
+        answers: (j.Answer || []).map((a) => {
+          const t = TYPE_NAME[a.type] || String(a.type);
+          let d = a.data;
+          if (t === "TXT") d = txt(d); else if (t === "CAA") d = caa(d); else if (t === "SOA") d = d; else d = trimDot(d);
+          return { name: trimDot(a.name), type: t, ttl: a.TTL, data: d };
+        }),
+      };
+    } catch (e) {
+      return { status: -1, answers: [], error: "Network request blocked or offline" };
+    }
+  }
+  async function copy(text) {
+    try { await navigator.clipboard.writeText(text); return true; }
+    catch {
+      const ta = document.createElement("textarea");
+      ta.value = text; document.body.append(ta); ta.select();
+      const ok = document.execCommand("copy"); ta.remove();
+      if (!ok) throw new Error("copy failed");
+      return true;
+    }
+  }
+  async function saveFile(name, content) {
+    const a = document.createElement("a");
+    const type = /\.html?$/i.test(name) ? "text/html;charset=utf-8" : "text/csv;charset=utf-8";
+    a.href = URL.createObjectURL(new Blob([content], { type }));
+    a.download = name; document.body.append(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    return name;
+  }
+  window.dnsApi = { query, copy, saveFile };
+})();
+
+</script>
+<script>
+// Domain DNS Checker — record catalogue, provider patterns, SPF/DMARC/DKIM analysis and export.
+// Exposes window.DnsAnalysis. Raw queries go through window.dnsApi (preload -> main process).
+var DnsAnalysis = (() => {
+  var __defProp = Object.defineProperty;
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __export = (target, all) => {
+    for (var name in all)
+      __defProp(target, name, { get: all[name], enumerable: true });
+  };
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames(from))
+        if (!__hasOwnProp.call(to, key) && key !== except)
+          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+  var analysis_exports = {};
+  __export(analysis_exports, {
+    formatTtl: () => formatTtl,
+    CNAME_PLATFORMS: () => CNAME_PLATFORMS,
+    DKIM_SELECTORS: () => DKIM_SELECTORS,
+    GROUPS: () => GROUPS,
+    M365_CHECKS: () => M365_CHECKS,
+    MX_PROVIDERS: () => MX_PROVIDERS,
+    NS_PROVIDERS: () => NS_PROVIDERS,
+    RESOLVERS: () => RESOLVERS,
+    SECURITY_CHECKS: () => SECURITY_CHECKS,
+    SPF_PROVIDERS: () => SPF_PROVIDERS,
+    SUBDOMAIN_HOSTS: () => SUBDOMAIN_HOSTS,
+    TAKEOVER_PRONE: () => TAKEOVER_PRONE,
+    VERIFIERS: () => VERIFIERS,
+    WEB_CHECKS: () => WEB_CHECKS,
+    dohQuery: () => dohQuery,
+    isValidDomain: () => isValidDomain,
+    matchPattern: () => matchPattern,
+    normaliseDomain: () => normaliseDomain,
+    resolverLabel: () => resolverLabel,
+    runReport: () => runReport,
+    statusText: () => statusText,
+    toCsv: () => toCsv,
+    toText: () => toText
+  });
+  const RESOLVERS = [
+    { id: "quad9", label: "Quad9 (9.9.9.9)", ip: "9.9.9.9" },
+    { id: "google", label: "Google (8.8.8.8)", ip: "8.8.8.8" },
+    { id: "cloudflare", label: "Cloudflare (1.1.1.1)", ip: "1.1.1.1" },
+    { id: "system", label: "System default", ip: "" }
+  ];
+  const resolverLabel = (ip) => RESOLVERS.find((r) => r.ip === ip)?.label ?? (ip ? `Custom (${ip})` : "System default");
+  const STATUS_TEXT = {
+    0: "NOERROR",
+    1: "FORMERR",
+    2: "SERVFAIL",
+    3: "NXDOMAIN",
+    4: "NOTIMP",
+    5: "REFUSED"
+  };
+  const statusText = (s) => STATUS_TEXT[s] ?? `RCODE ${s}`;
+  async function dohQuery(name, type, resolver) {
+    try {
+      return await globalThis.dnsApi.query(name, type, resolver);
+    } catch (e) {
+      return { status: -1, answers: [], error: e instanceof Error ? e.message : "Request failed" };
+    }
+  }
+  const GROUPS = [
+    { id: "mail", label: "Mail & authentication" },
+    { id: "m365", label: "Microsoft 365" },
+    { id: "dkim", label: "DKIM selectors" },
+    { id: "verify", label: "Verification tokens" },
+    { id: "web", label: "Website & DNS" },
+    { id: "security", label: "Mail transport security" },
+    { id: "subdomains", label: "Subdomains" }
+  ];
+  const M365_CHECKS = [
+    { id: "autodiscover", group: "m365", label: "Autodiscover", host: "autodiscover", type: "CNAME", expect: "autodiscover.outlook.com" },
+    { id: "enterpriseenrollment", group: "m365", label: "Intune enrollment", host: "enterpriseenrollment", type: "CNAME", expect: "enterpriseenrollment-s.manage.microsoft.com" },
+    { id: "enterpriseregistration", group: "m365", label: "Entra device registration", host: "enterpriseregistration", type: "CNAME", expect: "enterpriseregistration.windows.net" },
+    { id: "lyncdiscover", group: "m365", label: "Lyncdiscover (Teams/Skype)", host: "lyncdiscover", type: "CNAME", expect: "webdir.online.lync.com" },
+    { id: "sip", group: "m365", label: "SIP (Teams/Skype)", host: "sip", type: "CNAME", expect: "sipdir.online.lync.com" },
+    { id: "sip-tls", group: "m365", label: "SIP TLS SRV", host: "_sip._tls", type: "SRV", expect: "sipdir.online.lync.com" },
+    { id: "sipfed", group: "m365", label: "SIP federation SRV", host: "_sipfederationtls._tcp", type: "SRV", expect: "sipfed.online.lync.com" }
+  ];
+  const WEB_CHECKS = [
+    { id: "a", group: "web", label: "Apex IPv4", host: "@", type: "A" },
+    { id: "aaaa", group: "web", label: "Apex IPv6", host: "@", type: "AAAA" },
+    { id: "www", group: "web", label: "www", host: "www", type: "A" },
+    { id: "ns", group: "web", label: "Name servers", host: "@", type: "NS" },
+    { id: "soa", group: "web", label: "Start of authority", host: "@", type: "SOA" },
+    { id: "caa", group: "web", label: "Certificate authorities (CAA)", host: "@", type: "CAA" }
+  ];
+  const SECURITY_CHECKS = [
+    { id: "mta-sts", group: "security", label: "MTA-STS", host: "_mta-sts", type: "TXT" },
+    { id: "tls-rpt", group: "security", label: "TLS reporting (TLS-RPT)", host: "_smtp._tls", type: "TXT" },
+    { id: "bimi", group: "security", label: "BIMI", host: "default._bimi", type: "TXT" }
+  ];
+  const DKIM_SELECTORS = [
+    { selector: "selector1", service: "Microsoft 365" },
+    { selector: "selector2", service: "Microsoft 365" },
+    { selector: "google", service: "Google Workspace" },
+    { selector: "s1", service: "SendGrid" },
+    { selector: "s2", service: "SendGrid" },
+    { selector: "smtpapi", service: "SendGrid (legacy)" },
+    { selector: "k1", service: "Mailchimp / Mandrill" },
+    { selector: "k2", service: "Mailchimp" },
+    { selector: "k3", service: "Mailchimp" },
+    { selector: "mandrill", service: "Mandrill" },
+    { selector: "mte1", service: "Mailchimp Transactional" },
+    { selector: "smtp", service: "Mailgun" },
+    { selector: "mx", service: "Mailgun" },
+    { selector: "mailo", service: "Mailgun" },
+    { selector: "krs", service: "Mailgun" },
+    { selector: "pic", service: "Mailgun" },
+    { selector: "brevo1", service: "Brevo" },
+    { selector: "brevo2", service: "Brevo" },
+    { selector: "mail", service: "Brevo / generic" },
+    { selector: "mailjet", service: "Mailjet" },
+    { selector: "zmail", service: "Zoho Mail" },
+    { selector: "zoho", service: "Zoho Mail" },
+    { selector: "cm", service: "Campaign Monitor" },
+    { selector: "ctct1", service: "Constant Contact" },
+    { selector: "ctct2", service: "Constant Contact" },
+    { selector: "fm1", service: "Fastmail" },
+    { selector: "fm2", service: "Fastmail" },
+    { selector: "fm3", service: "Fastmail" },
+    { selector: "protonmail", service: "Proton Mail" },
+    { selector: "protonmail2", service: "Proton Mail" },
+    { selector: "protonmail3", service: "Proton Mail" },
+    { selector: "sig1", service: "iCloud Mail" },
+    { selector: "dkim", service: "Generic" },
+    { selector: "default", service: "Generic / cPanel" }
+  ];
+  const SUBDOMAIN_HOSTS = [
+    "mail",
+    "webmail",
+    "support",
+    "help",
+    "blog",
+    "status",
+    "app",
+    "api",
+    "cdn",
+    "files",
+    "portal",
+    "shop",
+    "staging",
+    "dev",
+    "track",
+    "sl",
+    "email",
+    "links",
+    "remote",
+    "vpn"
+  ];
+  const MX_PROVIDERS = [
+    { re: /(mail\.protection\.outlook\.com|\.mx\.microsoft)$/i, label: "Microsoft 365 (Exchange Online)" },
+    { re: /(aspmx\.l\.google\.com|googlemail\.com|smtp\.google\.com)$/i, label: "Google Workspace" },
+    { re: /mimecast\.(com|co\.za)$/i, label: "Mimecast" },
+    { re: /pphosted\.com$/i, label: "Proofpoint" },
+    { re: /ppe-hosted\.com$/i, label: "Proofpoint Essentials" },
+    { re: /messagelabs\.com$/i, label: "Broadcom Email Security" },
+    { re: /barracudanetworks\.com$/i, label: "Barracuda" },
+    { re: /(iphmx\.com|ces\.cisco\.com)$/i, label: "Cisco Secure Email" },
+    { re: /trendmicro\.(com|eu)$/i, label: "Trend Micro" },
+    { re: /sophos\.com$/i, label: "Sophos" },
+    { re: /mailcontrol\.com$/i, label: "Forcepoint" },
+    { re: /zoho\.(com|eu|in)$/i, label: "Zoho Mail" },
+    { re: /mailgun\.org$/i, label: "Mailgun" },
+    { re: /sendgrid\.net$/i, label: "SendGrid" },
+    { re: /amazonaws\.com$/i, label: "Amazon SES" },
+    { re: /protonmail\.ch$/i, label: "Proton Mail" },
+    { re: /messagingengine\.com$/i, label: "Fastmail" },
+    { re: /mail\.icloud\.com$/i, label: "iCloud Mail" },
+    { re: /secureserver\.net$/i, label: "GoDaddy" },
+    { re: /ionos\.(co\.uk|com|de)$/i, label: "IONOS" },
+    { re: /123-reg\.co\.uk$/i, label: "123 Reg" },
+    { re: /(livemail\.co\.uk|fasthosts\.co\.uk)$/i, label: "Fasthosts" }
+  ];
+  const SPF_PROVIDERS = [
+    { re: /spf\.protection\.outlook\.com$/i, label: "Microsoft 365" },
+    { re: /_spf\.google\.com$/i, label: "Google Workspace" },
+    { re: /sendgrid\.net$/i, label: "SendGrid" },
+    { re: /mailgun\.org$/i, label: "Mailgun" },
+    { re: /servers\.mcsv\.net$/i, label: "Mailchimp" },
+    { re: /spf\.mandrillapp\.com$/i, label: "Mandrill" },
+    { re: /amazonses\.com$/i, label: "Amazon SES" },
+    { re: /(sendinblue\.com|brevo\.com)$/i, label: "Brevo" },
+    { re: /mailjet\.com$/i, label: "Mailjet" },
+    { re: /mtasv\.net$/i, label: "Postmark" },
+    { re: /sparkpostmail\.com$/i, label: "SparkPost" },
+    { re: /hubspotemail\.net$/i, label: "HubSpot" },
+    { re: /salesforce\.com$/i, label: "Salesforce" },
+    { re: /exacttarget\.com$/i, label: "Salesforce Marketing Cloud" },
+    { re: /mail\.zendesk\.com$/i, label: "Zendesk" },
+    { re: /freshdesk\.com$/i, label: "Freshdesk" },
+    { re: /constantcontact\.com$/i, label: "Constant Contact" },
+    { re: /createsend\.com$/i, label: "Campaign Monitor" },
+    { re: /smtp2go\.com$/i, label: "SMTP2GO" },
+    { re: /elasticemail\.com$/i, label: "Elastic Email" },
+    { re: /zoho\.(com|eu|in)$/i, label: "Zoho Mail" },
+    { re: /mimecast\.com$/i, label: "Mimecast" },
+    { re: /pphosted\.com$/i, label: "Proofpoint" },
+    { re: /messagelabs\.com$/i, label: "Broadcom Email Security" },
+    { re: /protonmail\.ch$/i, label: "Proton Mail" },
+    { re: /icloud\.com$/i, label: "iCloud Mail" },
+    { re: /messagingengine\.com$/i, label: "Fastmail" },
+    { re: /secureserver\.net$/i, label: "GoDaddy" },
+    { re: /intuit\.com$/i, label: "Intuit" },
+    { re: /xero\.com$/i, label: "Xero" },
+    { re: /qualtrics\.com$/i, label: "Qualtrics" },
+    { re: /docusign\.(net|com)$/i, label: "DocuSign" }
+  ];
+  const NS_PROVIDERS = [
+    { re: /ns\.cloudflare\.com$/i, label: "Cloudflare" },
+    { re: /azure-dns\.(com|net|org|info)$/i, label: "Azure DNS" },
+    { re: /awsdns-\d+\./i, label: "Amazon Route 53" },
+    { re: /googledomains\.com$/i, label: "Google Domains" },
+    { re: /ns-cloud-.*\.googledomains\.com$|ns-cloud/i, label: "Google Cloud DNS" },
+    { re: /domaincontrol\.com$/i, label: "GoDaddy" },
+    { re: /registrar-servers\.com$/i, label: "Namecheap" },
+    { re: /123-reg\.co\.uk$/i, label: "123 Reg" },
+    { re: /livedns\.co\.uk$/i, label: "Fasthosts" },
+    { re: /ui-dns\.(com|org|de|biz)$/i, label: "IONOS" },
+    { re: /wixdns\.net$/i, label: "Wix" },
+    { re: /squarespacedns\.com$/i, label: "Squarespace" },
+    { re: /dnsmadeeasy\.com$/i, label: "DNS Made Easy" },
+    { re: /nsone\.net$/i, label: "NS1" },
+    { re: /ultradns\.(com|net|org|biz|info|co\.uk)$/i, label: "UltraDNS" },
+    { re: /gandi\.net$/i, label: "Gandi" },
+    { re: /dns-parking\.com$/i, label: "Hostinger" },
+    { re: /dnsimple\.com$/i, label: "DNSimple" },
+    { re: /akam\.net$/i, label: "Akamai" }
+  ];
+  const CNAME_PLATFORMS = [
+    { re: /azurewebsites\.net$/i, label: "Azure App Service" },
+    { re: /trafficmanager\.net$/i, label: "Azure Traffic Manager" },
+    { re: /cloudapp\.(net|azure\.com)$/i, label: "Azure Cloud Service" },
+    { re: /azurefd\.net$/i, label: "Azure Front Door" },
+    { re: /blob\.core\.windows\.net$/i, label: "Azure Blob Storage" },
+    { re: /azurestaticapps\.net$/i, label: "Azure Static Web Apps" },
+    { re: /cloudfront\.net$/i, label: "Amazon CloudFront" },
+    { re: /amazonaws\.com$/i, label: "AWS" },
+    { re: /github\.io$/i, label: "GitHub Pages" },
+    { re: /herokuapp\.com|herokudns\.com$/i, label: "Heroku" },
+    { re: /netlify\.app$/i, label: "Netlify" },
+    { re: /vercel-dns\.com$|vercel\.app$/i, label: "Vercel" },
+    { re: /pages\.dev$/i, label: "Cloudflare Pages" },
+    { re: /wpengine\.com$/i, label: "WP Engine" },
+    { re: /fastly\.net$/i, label: "Fastly" },
+    { re: /zendesk\.com$/i, label: "Zendesk" },
+    { re: /myshopify\.com$/i, label: "Shopify" },
+    { re: /squarespace\.com$/i, label: "Squarespace" },
+    { re: /wixdns\.net$/i, label: "Wix" },
+    { re: /ghs\.googlehosted\.com$/i, label: "Google hosted" },
+    { re: /sendgrid\.net$/i, label: "SendGrid" },
+    { re: /mailgun\.org$/i, label: "Mailgun" },
+    { re: /hubspot\.net$|hs-sites\.com$/i, label: "HubSpot" },
+    { re: /m2\.sendlayer\.net$/i, label: "SendLayer" },
+    { re: /outlook\.com$/i, label: "Microsoft 365" },
+    { re: /lync\.com$/i, label: "Microsoft Teams/Skype" }
+  ];
+  const TAKEOVER_PRONE = /(azurewebsites\.net|trafficmanager\.net|cloudapp\.net|blob\.core\.windows\.net|amazonaws\.com|cloudfront\.net|github\.io|zendesk\.com|fastly\.net|herokuapp\.com|wpengine\.com|m2\.sendlayer\.net|pages\.dev|netlify\.app)$/i;
+  const VERIFIERS = [
+    { re: /^google-site-verification=/i, label: "Google" },
+    { re: /^MS=ms\d+/i, label: "Microsoft 365" },
+    { re: /^msvalidate\.01=/i, label: "Bing Webmaster" },
+    { re: /^facebook-domain-verification=/i, label: "Facebook / Meta" },
+    { re: /^apple-domain-verification=/i, label: "Apple" },
+    { re: /^atlassian-domain-verification=/i, label: "Atlassian" },
+    { re: /^stripe-verification=/i, label: "Stripe" },
+    { re: /^shopify-verification-code=|^shopify-domain-verification=/i, label: "Shopify" },
+    { re: /^docusign=/i, label: "DocuSign" },
+    { re: /^adobe-idp-site-verification=|^adobe-sign-verification=/i, label: "Adobe" },
+    { re: /^ZOOM_verify_/i, label: "Zoom" },
+    { re: /^hubspot-developer-verification=|^hubspot-domain-verification=/i, label: "HubSpot" },
+    { re: /^dropbox-domain-verification=/i, label: "Dropbox" },
+    { re: /^globalsign-domain-verification=|^_globalsign-domain-verification=/i, label: "GlobalSign" },
+    { re: /^miro-verification=/i, label: "Miro" },
+    { re: /^have-i-been-pwned-verification=/i, label: "Have I Been Pwned" },
+    { re: /^cisco-ci-domain-verification=/i, label: "Cisco Webex" },
+    { re: /^keybase-site-verification=/i, label: "Keybase" },
+    { re: /^yandex-verification:/i, label: "Yandex" },
+    { re: /^zoho-verification=/i, label: "Zoho" },
+    { re: /^amazonses:/i, label: "Amazon SES" },
+    { re: /^mongodb-site-verification=/i, label: "MongoDB" },
+    { re: /^slack-domain-verification=/i, label: "Slack" },
+    { re: /^openai-domain-verification=/i, label: "OpenAI" },
+    { re: /^pardot\d*=|^pardot_/i, label: "Salesforce Pardot" },
+    { re: /^citrix-verification-code=/i, label: "Citrix" },
+    { re: /^logmein-verification-code=/i, label: "LogMeIn" },
+    { re: /^knowbe4-site-verification=/i, label: "KnowBe4" },
+    { re: /^mailru-verification:/i, label: "Mail.ru" },
+    { re: /^webexdomainverification\./i, label: "Webex" },
+    { re: /^teamviewer-sso-verification=/i, label: "TeamViewer" },
+    { re: /^canva-site-verification=/i, label: "Canva" },
+    { re: /^brevo-code:|^Sendinblue-code:/i, label: "Brevo" },
+    { re: /^mailjet[-_]/i, label: "Mailjet" },
+    { re: /^sendgrid/i, label: "SendGrid" },
+    { re: /^onetrust-domain-verification=/i, label: "OneTrust" },
+    { re: /^asv=/i, label: "Asana" },
+    { re: /^notion-domain-verification=/i, label: "Notion" },
+    { re: /^postman-domain-verification=/i, label: "Postman" }
+  ];
+  const matchPattern = (value, list) => list.find((p) => p.re.test(value))?.label;
+  function normaliseDomain(input) {
+    let d = input.trim().toLowerCase();
+    d = d.replace(/^[a-z]+:\/\//, "").replace(/[/?#].*$/, "").replace(/^\*\./, "").replace(/\.$/, "");
+    d = d.replace(/^www\./, "");
+    if (d.includes("@")) d = d.split("@").pop() ?? d;
+    return d;
+  }
+  const isValidDomain = (d) => /^(?=.{1,253}$)(?:(?!-)[a-z0-9-]{1,63}(?<!-)\.)+[a-z][a-z0-9-]{1,62}$/i.test(d);
+  const fqdn = (host, domain) => host === "@" || host === "" ? domain : `${host}.${domain}`;
+  async function pool(tasks, size, onDone) {
+    const out = new Array(tasks.length);
+    let i = 0;
+    const workers = Array.from({ length: Math.min(size, tasks.length) }, async () => {
+      while (i < tasks.length) {
+        const idx = i++;
+        out[idx] = await tasks[idx]();
+        onDone();
+      }
+    });
+    await Promise.all(workers);
+    return out;
+  }
+  function shape(def, name, r) {
+    const cnameRecs = r.answers.filter((a) => a.type === "CNAME");
+    const valueRecs = r.answers.filter((a) => a.type === def.type && def.type !== "CNAME");
+    if (def.type === "CNAME") valueRecs.push(...cnameRecs.slice(0, 1));
+    const cnames = cnameRecs.map((a) => a.data);
+    const values = valueRecs.map((a) => a.data);
+    const cnameTtls = cnameRecs.map((a) => a.ttl);
+    const ttls = valueRecs.map((a) => a.ttl);
+    const base = {
+      id: def.id,
+      group: def.group,
+      label: def.label,
+      name,
+      type: def.type,
+      status: r.status,
+      error: r.error,
+      values,
+      cnames,
+      ttls,
+      cnameTtls,
+      tone: "neutral",
+      verdict: "Not found"
+    };
+    if (r.status === -1) return { ...base, tone: "error", verdict: `Lookup failed${r.error ? ` (${r.error})` : ""}` };
+    if (r.status === 2) return { ...base, tone: "error", verdict: "SERVFAIL" };
+    return base;
+  }
+  async function runReport(domain, resolver, extraSelectors, extraHosts, onProgress) {
+    const selectorDefs = [
+      ...DKIM_SELECTORS,
+      ...extraSelectors.filter((s) => !DKIM_SELECTORS.some((d) => d.selector === s)).map((s) => ({ selector: s, service: "Custom" }))
+    ];
+    const hostList = Array.from(/* @__PURE__ */ new Set([...SUBDOMAIN_HOSTS, ...extraHosts]));
+    const defs = [
+      { id: "mx", group: "mail", label: "MX", host: "@", type: "MX" },
+      { id: "root-txt", group: "mail", label: "Apex TXT (SPF & tokens)", host: "@", type: "TXT" },
+      { id: "dmarc", group: "mail", label: "DMARC", host: "_dmarc", type: "TXT" },
+      ...M365_CHECKS,
+      ...selectorDefs.map((s) => ({
+        id: `dkim-${s.selector}`,
+        group: "dkim",
+        label: s.selector,
+        host: `${s.selector}._domainkey`,
+        type: "TXT",
+        hint: s.service
+      })),
+      { id: "www-txt", group: "verify", label: "www TXT", host: "www", type: "TXT" },
+      ...WEB_CHECKS,
+      ...SECURITY_CHECKS,
+      ...hostList.map((h) => ({ id: `sub-${h}`, group: "subdomains", label: h, host: h, type: "A" }))
+    ];
+    let done = 0;
+    let total = defs.length;
+    const tick = () => onProgress(++done, total);
+    onProgress(0, total);
+    const raw = await pool(
+      defs.map((d) => async () => ({ def: d, name: fqdn(d.host, domain), res: await dohQuery(fqdn(d.host, domain), d.type, resolver) })),
+      8,
+      tick
+    );
+    const results = raw.map(({ def, name, res }) => {
+      const r = shape(def, name, res);
+      if (r.tone === "error") return r;
+      const hasValue = r.values.length > 0 || r.cnames.length > 0;
+      if (def.group === "m365") {
+        if (!hasValue) return { ...r, verdict: "Not published" };
+        const all = [...r.values, ...r.cnames].join(" ").toLowerCase();
+        return def.expect && all.includes(def.expect) ? { ...r, tone: "success", verdict: "Microsoft value" } : { ...r, tone: "warning", verdict: `Not the Microsoft value (${def.expect})` };
+      }
+      if (def.group === "dkim") {
+        const key = r.values.find((v) => /(^|;)\s*(v=DKIM1|p=|k=rsa)/i.test(v));
+        const svc = def.hint;
+        if (key) {
+          const revoked = /(^|;)\s*p=\s*(;|$)/i.test(key);
+          return { ...r, service: svc, tone: revoked ? "warning" : "success", verdict: revoked ? "Key revoked (empty p=)" : "Key published" };
+        }
+        if (r.cnames.length) {
+          return { ...r, service: svc, tone: "warning", verdict: r.status === 3 ? "CNAME target does not exist" : "CNAME present, no key at target" };
+        }
+        return { ...r, service: svc, verdict: "Not published" };
+      }
+      if (def.group === "security") {
+        if (!r.values.length) return { ...r, verdict: "Not published" };
+        return { ...r, tone: "success", verdict: "Published" };
+      }
+      if (def.group === "subdomains" || def.id === "www") {
+        if (r.cnames.length) {
+          const target = r.cnames[r.cnames.length - 1];
+          const svc = matchPattern(target, CNAME_PLATFORMS);
+          if (r.status === 3) return { ...r, service: svc, tone: "error", verdict: "Dangling CNAME \u2014 target NXDOMAIN (takeover risk)" };
+          if (!r.values.length) return { ...r, service: svc, tone: "warning", verdict: "CNAME target has no A record" };
+          if (TAKEOVER_PRONE.test(target)) return { ...r, service: svc, tone: "info", verdict: "Cloud-hosted target \u2014 confirm still in use" };
+          return { ...r, service: svc, tone: "success", verdict: "Resolves via CNAME" };
+        }
+        if (r.values.length) return { ...r, tone: "success", verdict: "Resolves" };
+        return { ...r, verdict: r.status === 3 ? "Does not exist" : "No A record" };
+      }
+      if (def.id === "mx") {
+        if (!r.values.length) return { ...r, tone: "error", verdict: "No MX \u2014 domain cannot receive mail" };
+        const nullMx = r.values.some((v) => /^0\s+\.?$/.test(v.trim()));
+        if (nullMx) return { ...r, tone: "info", verdict: "Null MX \u2014 does not accept mail" };
+        return { ...r, tone: "success", verdict: `${r.values.length} host${r.values.length > 1 ? "s" : ""}` };
+      }
+      if (def.id === "ns") {
+        if (!r.values.length) return { ...r, tone: "error", verdict: r.status === 3 ? "Domain does not exist" : "No NS" };
+        return { ...r, tone: "success", verdict: matchPattern(r.values[0], NS_PROVIDERS) ?? `${r.values.length} servers` };
+      }
+      if (def.id === "caa") {
+        return r.values.length ? { ...r, tone: "success", verdict: "Restricted" } : { ...r, verdict: "Not published (any CA may issue)" };
+      }
+      if (r.values.length) return { ...r, tone: "success", verdict: "Found" };
+      return r;
+    });
+    const rootTxt = results.find((r) => r.id === "root-txt")?.values ?? [];
+    const spfRecords = rootTxt.filter((v) => /^v=spf1(\s|$)/i.test(v));
+    const spf = await analyseSpf(domain, spfRecords, resolver, () => {
+      total++;
+      tick();
+    });
+    const dmarcVals = (results.find((r) => r.id === "dmarc")?.values ?? []).filter((v) => /^v=DMARC1/i.test(v));
+    const dmarc = analyseDmarc(dmarcVals);
+    const dmarcRow = results.find((r) => r.id === "dmarc");
+    if (dmarcRow && dmarcRow.tone !== "error") {
+      dmarcRow.tone = dmarc.tone;
+      dmarcRow.verdict = dmarc.verdict;
+    }
+    const rootRow = results.find((r) => r.id === "root-txt");
+    if (rootRow && rootRow.tone !== "error") {
+      rootRow.tone = rootTxt.length ? "success" : "neutral";
+      rootRow.verdict = rootTxt.length ? `${rootTxt.length} record${rootTxt.length > 1 ? "s" : ""}` : "None";
+    }
+    const mxRow = results.find((r) => r.id === "mx");
+    const mxProviders = unique((mxRow?.values ?? []).map((v) => matchPattern(v.split(/\s+/).pop() ?? "", MX_PROVIDERS) ?? (v.split(/\s+/).pop() ?? "")));
+    const nsProviders = unique((results.find((r) => r.id === "ns")?.values ?? []).map((v) => matchPattern(v, NS_PROVIDERS) ?? v));
+    const wwwTxt = results.find((r) => r.id === "www-txt")?.values ?? [];
+    const verifications = [
+      ...rootTxt.map((v) => ({ v, at: domain })),
+      ...wwwTxt.map((v) => ({ v, at: `www.${domain}` }))
+    ].map(({ v }) => ({ service: matchPattern(v, VERIFIERS), value: v })).filter((x) => !!x.service);
+    const dkimServices = results.filter((r) => r.group === "dkim" && r.tone === "success").map((r) => r.service ?? "");
+    const senders = unique([...spf.services, ...dkimServices.filter((s) => s && !/generic|custom/i.test(s))]);
+    const www = results.find((r) => r.id === "www");
+    const apexA = results.find((r) => r.id === "a");
+    const websiteTargets = unique([
+      ...www?.cnames.length ? [www.service ?? www.cnames[www.cnames.length - 1]] : [],
+      ...(apexA?.values ?? []).slice(0, 2)
+    ]);
+    return {
+      domain,
+      resolver,
+      ranAt: (/* @__PURE__ */ new Date()).toISOString(),
+      results,
+      spf,
+      dmarc,
+      mxProviders,
+      nsProviders,
+      verifications,
+      senders,
+      websiteTargets,
+      queryCount: total
+    };
+  }
+  const unique = (a) => Array.from(new Set(a.filter(Boolean)));
+  async function analyseSpf(domain, records, resolver, onQuery) {
+    if (records.length === 0) {
+      return { records, lookups: 0, includes: [], services: [], tone: "error", verdict: "No SPF record" };
+    }
+    const record = records[0];
+    const terms = record.split(/\s+/).slice(1);
+    const allTerm = terms.find((t) => /^[+\-~?]?all$/i.test(t));
+    const includes = terms.filter((t) => /^[+\-~?]?(include:|redirect=)/i.test(t)).map((t) => t.replace(/^[+\-~?]?(include:|redirect=)/i, "")).map((d) => ({ domain: d, service: matchPattern(d, SPF_PROVIDERS) }));
+    const seen = /* @__PURE__ */ new Set();
+    const nestedServices = [];
+    async function count(rec, depth) {
+      if (depth > 10) return 0;
+      let n = 0;
+      for (const t of rec.split(/\s+/).slice(1)) {
+        const term = t.replace(/^[+\-~?]/, "").toLowerCase();
+        if (/^(a|mx|ptr)([:/]|$)/.test(term) || term.startsWith("exists:")) n++;
+        const m = term.match(/^(include:|redirect=)(.+)$/);
+        if (m) {
+          n++;
+          const target = m[2];
+          if (seen.has(target)) continue;
+          seen.add(target);
+          const svc = matchPattern(target, SPF_PROVIDERS);
+          if (svc) nestedServices.push(svc);
+          onQuery();
+          const r = await dohQuery(target, "TXT", resolver);
+          const child = r.answers.filter((a) => a.type === "TXT").map((a) => a.data).find((v) => /^v=spf1(\s|$)/i.test(v));
+          if (child) n += await count(child, depth + 1);
+        }
+      }
+      return n;
+    }
+    const lookups = await count(record, 0);
+    const services = unique([...includes.map((i) => i.service ?? ""), ...nestedServices]);
+    let tone = "success";
+    let verdict = "";
+    const q = allTerm?.[0];
+    if (records.length > 1) {
+      tone = "error";
+      verdict = `${records.length} SPF records \u2014 only one is allowed`;
+    } else if (lookups > 10) {
+      tone = "error";
+      verdict = `${lookups} DNS lookups \u2014 exceeds the limit of 10`;
+    } else if (q === "+" || allTerm?.toLowerCase() === "all") {
+      tone = "error";
+      verdict = "+all allows any sender";
+    } else if (!allTerm && !/redirect=/i.test(record)) {
+      tone = "warning";
+      verdict = "No all mechanism";
+    } else if (q === "-") verdict = "Hard fail (-all)";
+    else if (q === "~") verdict = "Soft fail (~all)";
+    else if (q === "?") {
+      tone = "warning";
+      verdict = "Neutral (?all)";
+    } else verdict = "Redirect";
+    void domain;
+    return { records, all: allTerm, lookups, includes, services, tone, verdict };
+  }
+  function analyseDmarc(records) {
+    if (!records.length) return { records, tags: {}, tone: "error", verdict: "No DMARC record" };
+    const tags = {};
+    for (const part of records[0].split(";")) {
+      const [k, ...v] = part.split("=");
+      if (k && v.length) tags[k.trim().toLowerCase()] = v.join("=").trim();
+    }
+    if (records.length > 1) return { records, tags, tone: "error", verdict: `${records.length} DMARC records \u2014 only one is allowed` };
+    const p = (tags.p ?? "").toLowerCase();
+    const pct = tags.pct && tags.pct !== "100" ? ` at ${tags.pct}%` : "";
+    if (p === "reject") return { records, tags, tone: "success", verdict: `p=reject${pct}` };
+    if (p === "quarantine") return { records, tags, tone: "success", verdict: `p=quarantine${pct}` };
+    if (p === "none") return { records, tags, tone: "warning", verdict: "p=none (monitoring only)" };
+    return { records, tags, tone: "error", verdict: "Missing or invalid p= tag" };
+  }
+  function formatTtl(sec) {
+    if (typeof sec !== "number" || !isFinite(sec)) return "";
+    const d = Math.floor(sec / 86400), h = Math.floor(sec % 86400 / 3600), m = Math.floor(sec % 3600 / 60), s2 = sec % 60;
+    if (d) return h ? `${d}d ${h}h` : `${d}d`;
+    if (h) return m ? `${h}h ${m}m` : `${h}h`;
+    if (m) return s2 ? `${m}m ${s2}s` : `${m}m`;
+    return `${s2}s`;
+  }
+  function toCsv(report) {
+    const esc = (s) => `"${s.replace(/"/g, '""')}"`;
+    const rows = [["Group", "Check", "Name", "Type", "Status", "Verdict", "Service", "Values", "TTL (s)", "CNAME chain", "CNAME TTL (s)"]];
+    for (const r of report.results) {
+      rows.push([
+        GROUPS.find((g) => g.id === r.group)?.label ?? r.group,
+        r.label,
+        r.name,
+        r.type,
+        r.status === -1 ? "ERROR" : statusText(r.status),
+        r.verdict,
+        r.service ?? "",
+        r.values.join(" | "),
+        [...new Set(r.ttls || [])].join(" | "),
+        r.cnames.join(" -> "),
+        (r.cnameTtls || []).join(" -> ")
+      ]);
+    }
+    return rows.map((row) => row.map(esc).join(",")).join("\r\n");
+  }
+  function toText(report) {
+    const lines = [`DNS report for ${report.domain} \u2014 ${resolverLabel(report.resolver)} \u2014 ${report.ranAt}`, ""];
+    lines.push(`SPF: ${report.spf.verdict} (${report.spf.lookups} lookups)`);
+    report.spf.records.forEach((r) => lines.push(`  ${r}`));
+    lines.push(`DMARC: ${report.dmarc.verdict}`);
+    report.dmarc.records.forEach((r) => lines.push(`  ${r}`));
+    for (const g of GROUPS) {
+      const rows = report.results.filter((r) => r.group === g.id && (r.values.length || r.cnames.length || r.tone === "error"));
+      if (!rows.length) continue;
+      lines.push("", `== ${g.label} ==`);
+      for (const r of rows) {
+        lines.push(`${r.name} [${r.type}] \u2014 ${r.verdict}`);
+        r.cnames.forEach((c, i) => lines.push(`  CNAME \u2192 ${c}  (TTL ${(r.cnameTtls || [])[i] ?? "?"})`));
+        r.values.forEach((v, i) => { if (!(r.type === "CNAME" && r.cnames.includes(v))) lines.push(`  ${v}  (TTL ${(r.ttls || [])[i] ?? "?"})`); });
+      }
+    }
+    return lines.join("\n");
+  }
+  return __toCommonJS(analysis_exports);
+})();
+
+
+DnsAnalysis.RESOLVERS.splice(0, DnsAnalysis.RESOLVERS.length, { id: "quad9", label: "Quad9 (9.9.9.9)", ip: "9.9.9.9" }, { id: "google", label: "Google (8.8.8.8)", ip: "8.8.8.8" }, { id: "cloudflare", label: "Cloudflare (1.1.1.1)", ip: "1.1.1.1" });
+
+</script>
+<script>
+/* App logo as a data URI, embedded in exported Domain Health reports. */
+window.DNS_LOGO = "data:image/png;base64,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";
+/* Macnamara company logo, shown top right of Domain Health reports. */
+window.COMPANY_LOGO = "data:image/png;base64,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";
+</script>
+<script>
+/* Domain DNS Checker — Domain Health report.
+ * Builds a self-contained, printable HTML report from a lookup result.
+ * Exposes window.DnsHealthReport = { assess, buildHtml, fileName }.
+ * Every DNS value is untrusted text and is HTML-escaped before output. */
+"use strict";
+(() => {
+  const COMPANY = "Macnamara ICT Limited";
+
+  const esc = (v) => String(v ?? "")
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+
+  const fmtDate = (iso) => new Date(iso).toLocaleString("en-GB", {
+    day: "numeric", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit", timeZoneName: "short",
+  });
+
+  /* ------------------------------------------------------------------ */
+  /* Assessment: one row per check, status pass | warn | fail | info     */
+  /* ------------------------------------------------------------------ */
+  function assess(r, A) {
+    const items = [];
+    const add = (area, check, status, finding, action) => items.push({ area, check, status, finding, action: action || "" });
+    const get = (id) => r.results.find((x) => x.id === id);
+    const group = (g) => r.results.filter((x) => x.group === g);
+    const has = (x) => x && (x.values.length > 0 || x.cnames.length > 0);
+
+    /* Lookup reliability */
+    const failed = r.results.filter((x) => x.status === -1);
+    if (failed.length) {
+      add("Lookup", "Query failures", "fail", `${failed.length} of ${r.results.length} lookups failed (${failed.slice(0, 5).map((x) => x.name).join(", ")}${failed.length > 5 ? ", …" : ""}).`,
+        "Results for these names are incomplete. Re-run the check, or try a different resolver.");
+    }
+
+    /* Mail delivery */
+    const mx = get("mx");
+    const isM365 = r.mxProviders.some((p) => /Microsoft 365/.test(p)) || r.verifications.some((v) => v.service === "Microsoft 365");
+    if (mx.status !== -1) {
+      if (!mx.values.length) add("Email", "MX records", "fail", "No MX records found. The domain cannot receive email.", "Publish MX records for your mail provider (Microsoft 365: <tenant>.mail.protection.outlook.com).");
+      else if (mx.values.some((v) => /^0\s+\.?$/.test(v.trim()))) add("Email", "MX records", "info", "Null MX published: the domain explicitly does not accept email.", "No action needed if this domain should not receive email.");
+      else add("Email", "MX records", "pass", `${mx.values.length} MX record${mx.values.length > 1 ? "s" : ""}: ${r.mxProviders.join(", ")}.`);
+    }
+
+    /* SPF */
+    const spf = r.spf;
+    if (!spf.records.length) {
+      add("Email", "SPF", "fail", "No SPF record found. Receiving servers cannot verify who may send as this domain.",
+        isM365 ? "Publish a TXT record on the domain: v=spf1 include:spf.protection.outlook.com -all (add any other sending services)." : "Publish a TXT record starting v=spf1 listing every service that sends as this domain, ending in -all or ~all.");
+    } else {
+      if (spf.records.length > 1) add("Email", "SPF: single record", "fail", `${spf.records.length} SPF records found. Multiple SPF records make SPF fail (permerror).`, "Merge them into one v=spf1 record.");
+      else add("Email", "SPF: single record", "pass", "One SPF record published.");
+      if (spf.lookups > 10) add("Email", "SPF: DNS lookups", "fail", `${spf.lookups} DNS lookups. The limit is 10; SPF fails (permerror) above it.`, "Remove unused includes, or flatten some includes to IP ranges.");
+      else if (spf.lookups >= 8) add("Email", "SPF: DNS lookups", "warn", `${spf.lookups} of 10 DNS lookups used.`, "Close to the limit; adding another service may break SPF.");
+      else add("Email", "SPF: DNS lookups", "pass", `${spf.lookups} of 10 DNS lookups used.`);
+      const q = spf.all ? spf.all[0] : "";
+      if (!spf.all && !/redirect=/i.test(spf.records[0])) add("Email", "SPF: enforcement", "warn", "No all mechanism. Unlisted senders get a neutral result.", "End the record with -all (or ~all while testing).");
+      else if (q === "-") add("Email", "SPF: enforcement", "pass", "Hard fail (-all): unlisted senders fail SPF.");
+      else if (q === "~") add("Email", "SPF: enforcement", "pass", "Soft fail (~all): unlisted senders are marked suspicious.", "Optional: move to -all once every sender is listed. With DMARC enforced, ~all is acceptable.");
+      else if (q === "?") add("Email", "SPF: enforcement", "warn", "Neutral (?all): SPF gives no protection.", "Change to ~all or -all.");
+      else if (q === "+" || /^all$/i.test(spf.all || "")) add("Email", "SPF: enforcement", "fail", "+all allows any server in the world to pass SPF.", "Change to -all or ~all immediately.");
+      const unknown = spf.includes.filter((i) => !i.service).map((i) => i.domain);
+      add("Email", "SPF: authorised senders", "info", `${spf.services.length ? spf.services.join(", ") : "No recognised services"}${unknown.length ? `; also ${unknown.join(", ")}` : ""}.`, "Check every listed service is still in use; remove any that are not.");
+    }
+
+    /* DMARC */
+    const dm = r.dmarc;
+    const dmRow = get("dmarc");
+    if (dmRow.status !== -1) {
+      if (!dm.records.length) {
+        add("Email", "DMARC", "fail", "No DMARC record at _dmarc." + r.domain + ". Spoofed mail is not blocked and you receive no reports.", `Publish a TXT record at _dmarc.${r.domain}: v=DMARC1; p=none; rua=mailto:<reports address>, then move to quarantine/reject.`);
+      } else if (dm.records.length > 1) {
+        add("Email", "DMARC", "fail", `${dm.records.length} DMARC records found; receivers ignore DMARC when there is more than one.`, "Keep a single v=DMARC1 record.");
+      } else {
+        const p = (dm.tags.p || "").toLowerCase();
+        if (p === "reject") add("Email", "DMARC policy", "pass", "p=reject: mail failing DMARC is rejected.");
+        else if (p === "quarantine") add("Email", "DMARC policy", "pass", "p=quarantine: mail failing DMARC goes to junk.", "Consider p=reject once reports show all legitimate mail passes.");
+        else if (p === "none") add("Email", "DMARC policy", "warn", "p=none: monitoring only, spoofed mail is still delivered.", "Review DMARC reports, then move to p=quarantine and p=reject.");
+        else add("Email", "DMARC policy", "fail", "Missing or invalid p= tag.", "Set p=none, quarantine or reject.");
+        if (dm.tags.pct && dm.tags.pct !== "100") add("Email", "DMARC coverage", "warn", `pct=${dm.tags.pct}: the policy applies to only ${dm.tags.pct}% of failing mail.`, "Raise pct to 100 (or remove it).");
+        if (!dm.tags.rua) add("Email", "DMARC reporting", "warn", "No rua= address: you receive no aggregate reports.", "Add rua=mailto:<address> to see who sends as your domain.");
+        else add("Email", "DMARC reporting", "pass", `Aggregate reports sent to ${dm.tags.rua}.`);
+        if (dm.tags.sp && dm.tags.sp.toLowerCase() === "none" && p !== "none") add("Email", "DMARC subdomain policy", "warn", "sp=none: subdomains are not protected.", "Remove sp= or set it to quarantine/reject.");
+      }
+    }
+
+    /* DKIM */
+    const dkim = group("dkim");
+    const keys = dkim.filter((x) => x.tone === "success");
+    const broken = dkim.filter((x) => x.tone === "warning");
+    if (keys.length) add("Email", "DKIM keys", "pass", `${keys.length} key${keys.length > 1 ? "s" : ""} found: ${keys.map((k) => `${k.label} (${k.service})`).join(", ")}.`);
+    else add("Email", "DKIM keys", "warn", `No DKIM keys found on the ${dkim.length} common selectors checked.`, "Enable DKIM signing for each sending service. Services with custom selectors may not be detected; add them under Extra selectors.");
+    for (const b of broken) add("Email", `DKIM ${b.label}`, "warn", `${b.name}: ${b.verdict}.`, /^selector[12]$/.test(b.label) ? "Microsoft 365 DKIM is not enabled. Turn it on in the Defender portal (Email authentication settings > DKIM)." : "Fix the record or remove it if the service is no longer used.");
+    if (isM365) {
+      const m365Keys = keys.filter((k) => /^selector[12]$/.test(k.label));
+      if (!m365Keys.length && !broken.some((b) => /^selector[12]$/.test(b.label))) add("Microsoft 365", "DKIM selectors", "warn", "No selector1/selector2 CNAMEs. Microsoft 365 mail is not DKIM-signed with this domain.", "Create the two CNAMEs shown in the Defender portal, then enable DKIM.");
+    }
+
+    /* Microsoft 365 records */
+    const m365 = group("m365");
+    const needs = { autodiscover: "warn", enterpriseenrollment: "info", enterpriseregistration: "info", lyncdiscover: "info", sip: "info", "sip-tls": "info", sipfed: "info" };
+    const why = {
+      autodiscover: "Outlook uses this to find the mailbox. Create CNAME autodiscover → autodiscover.outlook.com.",
+      enterpriseenrollment: "Only needed for Intune MDM enrollment. CNAME → enterpriseenrollment-s.manage.microsoft.com.",
+      enterpriseregistration: "Only needed for Entra device registration. CNAME → enterpriseregistration.windows.net.",
+      lyncdiscover: "Only needed for Teams/Skype federation in some hybrid setups.",
+      sip: "Only needed for Teams/Skype federation in some hybrid setups.",
+      "sip-tls": "Only needed for Teams/Skype federation in some hybrid setups.",
+      sipfed: "Only needed for Teams/Skype federation in some hybrid setups.",
+    };
+    if (isM365) {
+      for (const x of m365) {
+        if (x.status === -1) continue;
+        if (x.tone === "success") add("Microsoft 365", x.label, "pass", `${x.name} points to the Microsoft value.`);
+        else if (x.tone === "warning") add("Microsoft 365", x.label, "warn", `${x.name} points to ${[...x.cnames, ...x.values].join(", ")}, not the Microsoft value.`, why[x.id]);
+        else add("Microsoft 365", x.label, needs[x.id] || "info", `${x.name} not published.`, why[x.id]);
+      }
+    } else {
+      const found = m365.filter(has);
+      add("Microsoft 365", "Tenant records", "info", found.length ? `Mail is not routed to Microsoft 365, but ${found.length} Microsoft 365 record${found.length > 1 ? "s are" : " is"} published (${found.map((x) => x.label).join(", ")}).` : "Mail is not routed to Microsoft 365; Microsoft 365 records not checked further.", found.length ? "Remove leftover records if Microsoft 365 is no longer used." : "");
+    }
+
+    /* Transport security */
+    const mta = get("mta-sts"), tls = get("tls-rpt"), bimi = get("bimi");
+    add("Email", "MTA-STS", has(mta) ? "pass" : "info", has(mta) ? "Published: senders must use TLS to deliver mail." : "Not published. Mail delivery can be downgraded to unencrypted.", has(mta) ? "" : "Optional hardening: publish _mta-sts TXT plus the policy file at https://mta-sts." + r.domain + "/.well-known/mta-sts.txt.");
+    add("Email", "TLS-RPT", has(tls) ? "pass" : "info", has(tls) ? "Published: you receive TLS delivery failure reports." : "Not published.", has(tls) ? "" : "Optional: publish _smtp._tls TXT v=TLSRPTv1; rua=mailto:<address>.");
+    if (has(bimi)) add("Email", "BIMI", "pass", "Published: supporting mailboxes can show your logo.");
+
+    /* DNS and website */
+    const ns = get("ns");
+    if (ns.status !== -1) {
+      if (!ns.values.length) add("DNS", "Name servers", "fail", "No NS records returned.", "Check the domain registration and delegation.");
+      else if (ns.values.length < 2) add("DNS", "Name servers", "warn", `Only one name server (${ns.values[0]}).`, "Use at least two name servers for resilience.");
+      else add("DNS", "Name servers", "pass", `${ns.values.length} name servers${r.nsProviders.length ? ` (${r.nsProviders.join(", ")})` : ""}.`);
+    }
+    const a = get("a"), www = get("www"), aaaa = get("aaaa"), caa = get("caa");
+    add("Website", "Apex address", a.values.length ? "pass" : "warn", a.values.length ? `${r.domain} resolves to ${a.values.join(", ")}.` : `${r.domain} has no A record; https://${r.domain} will not load.`, a.values.length ? "" : "Add an A record (or ALIAS) if the bare domain should load the website.");
+    if (www.tone === "error") add("Website", "www", "fail", `www.${r.domain}: ${www.verdict}.`, "Fix or remove the record.");
+    else add("Website", "www", has(www) && (www.values.length || www.cnames.length) ? "pass" : "warn", has(www) ? `www.${r.domain} resolves${www.service ? ` via ${www.service}` : ""}.` : `www.${r.domain} does not resolve.`, has(www) ? "" : "Add a www record if visitors may type www.");
+    add("Website", "IPv6", aaaa.values.length ? "pass" : "info", aaaa.values.length ? `IPv6 address published (${aaaa.values.join(", ")}).` : "No IPv6 (AAAA) address.", "");
+    add("Website", "CAA", caa.values.length ? "pass" : "info", caa.values.length ? `Certificate issuance restricted: ${caa.values.join("; ")}.` : "No CAA record; any certificate authority may issue certificates.", caa.values.length ? "" : "Optional: publish CAA records naming the CAs you use.");
+
+    /* Subdomains */
+    const subs = group("subdomains");
+    const dangling = subs.filter((x) => x.tone === "error");
+    const orphan = subs.filter((x) => x.tone === "warning");
+    const cloud = subs.filter((x) => x.tone === "info");
+    for (const d of dangling) add("Subdomains", d.label, "fail", `${d.name} → ${d.cnames[d.cnames.length - 1] || ""}: target does not exist. This can allow subdomain takeover.`, "Delete the CNAME, or re-create the resource it points to.");
+    for (const o of orphan) add("Subdomains", o.label, "warn", `${o.name} → ${o.cnames[o.cnames.length - 1] || ""}: target has no address.`, "Check the service is still in use; remove the record if not.");
+    for (const c of cloud) add("Subdomains", c.label, "info", `${c.name} → ${c.cnames[c.cnames.length - 1] || ""} (${c.service || "cloud service"}).`, "Confirm the resource still exists and is yours.");
+    if (!dangling.length && !orphan.length) add("Subdomains", "Dangling records", "pass", `No dangling CNAMEs among ${subs.length} common subdomains checked.`);
+
+    /* Verification tokens */
+    if (r.verifications.length) {
+      const counts = {};
+      for (const v of r.verifications) counts[v.service] = (counts[v.service] || 0) + 1;
+      add("DNS", "Verification tokens", "info", `${r.verifications.length} token${r.verifications.length > 1 ? "s" : ""}: ${Object.entries(counts).map(([s, n]) => (n > 1 ? `${s} ×${n}` : s)).join(", ")}.`, "Remove tokens for services you no longer use; they show which services the domain is linked to.");
+    }
+
+    const order = { fail: 0, warn: 1, pass: 2, info: 3 };
+    const summary = { pass: 0, warn: 0, fail: 0, info: 0 };
+    for (const i of items) summary[i.status]++;
+    return { items, summary, order };
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* HTML                                                                */
+  /* ------------------------------------------------------------------ */
+  const LABEL = { pass: "Pass", warn: "Warning", fail: "Fail", info: "Info" };
+
+  function buildHtml(r, A, logoDataUri, companyLogoUri) {
+    if (companyLogoUri === undefined && typeof window !== "undefined") companyLogoUri = window.COMPANY_LOGO;
+    const { items, summary, order } = assess(r, A);
+    const when = fmtDate(r.ranAt);
+    const resolver = A.resolverLabel(r.resolver);
+    const year = new Date(r.ranAt).getFullYear();
+    const title = `Domain Health Report – ${r.domain} – ${when} – ${resolver}`;
+    const overall = summary.fail ? "fail" : summary.warn ? "warn" : "pass";
+    const overallText = summary.fail ? "Problems found" : summary.warn ? "Improvements recommended" : "Healthy";
+    const actions = items.filter((i) => (i.status === "fail" || i.status === "warn") && i.action).sort((x, y) => order[x.status] - order[y.status]);
+    const areas = [...new Set(items.map((i) => i.area))];
+
+    const badge = (s) => `<span class="badge ${s}"><span class="dot" aria-hidden="true"></span>${LABEL[s]}</span>`;
+
+    const recordRows = (A.GROUPS || []).map((g) => {
+      const rows = r.results.filter((x) => x.group === g.id && (x.values.length || x.cnames.length));
+      if (!rows.length) return "";
+      return `<h3>${esc(g.label)}</h3>
+<table class="records"><thead><tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Value</th><th scope="col">TTL</th></tr></thead><tbody>
+${rows.map((x) => {
+        const lines = [
+          ...x.cnames.map((c, i) => [`CNAME → ${esc(c)}`, (x.cnameTtls || [])[i]]),
+          ...x.values.map((v, i) => [v, (x.ttls || [])[i]]).filter(([v]) => !(x.type === "CNAME" && x.cnames.includes(v))).map(([v, t]) => [esc(v), t]),
+        ];
+        const ttl = (t) => (typeof t === "number" ? `<span title="${t} seconds">${esc(A.formatTtl ? A.formatTtl(t) : t + "s")}</span>` : "—");
+        return `<tr><td class="mono">${esc(x.name)}</td><td class="mono">${esc(x.type)}</td><td class="mono">${lines.map((l) => `<div>${l[0]}</div>`).join("")}</td><td class="mono ttl">${lines.map((l) => `<div>${ttl(l[1])}</div>`).join("")}</td></tr>`;
+      }).join("\n")}
+</tbody></table>`;
+    }).join("\n");
+
+    const missing = r.results.filter((x) => !x.values.length && !x.cnames.length && x.status !== -1 && x.group !== "dkim" && x.group !== "subdomains");
+
+    return `<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>${esc(title)}</title>
+${logoDataUri ? `<link rel="icon" type="image/png" href="${logoDataUri}">` : ""}
+<style>
+:root { --fg:#0f1e2a; --muted:#4b5f6b; --border:#dbe4e7; --soft:#f1f5f6; --brand:#1a344c; --brand-fg:#fdfbed; --primary:#2b6f77;
+  --pass-bg:#dcfce7; --pass-fg:#14532d; --pass-dot:#16a34a; --warn-bg:#fef3c7; --warn-fg:#78350f; --warn-dot:#f59e0b;
+  --fail-bg:#fee2e2; --fail-fg:#7f1d1d; --fail-dot:#dc2626; --info-bg:#dbeafe; --info-fg:#1e3a8a; --info-dot:#2563eb; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--fg); background: #fff; font: 14px/1.5 "Segoe UI Variable","Segoe UI",system-ui,sans-serif; }
+.wrap { max-width: 1000px; margin: 0 auto; padding: 0 28px 28px; }
+header.band { background: var(--brand); color: var(--brand-fg); padding: 22px 0; margin-bottom: 24px; }
+header.band .wrap { display: flex; gap: 16px; align-items: center; padding-bottom: 0; }
+header.band img { width: 56px; height: 56px; flex: none; }
+header.band img.company { width: 232px; height: auto; margin-inline-start: auto; align-self: center; border-radius: 3px; }
+@media (max-width: 640px) { header.band .wrap { flex-wrap: wrap; } header.band img.company { width: 180px; margin-inline-start: 0; order: -1; } }
+header.band .kicker { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; opacity: .85; margin: 0; }
+h1 { font-size: 24px; margin: 2px 0 2px; font-family: ui-monospace,"Cascadia Mono",Consolas,monospace; word-break: break-all; }
+header.band .meta { margin: 0; font-size: 13px; }
+h2 { font-size: 17px; margin: 28px 0 10px; padding-bottom: 6px; border-bottom: 2px solid var(--primary); }
+h3 { font-size: 14px; margin: 18px 0 6px; }
+.overview { display: grid; grid-template-columns: 1.4fr repeat(4, 1fr); gap: 10px; }
+.tile { border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.tile .n { font-size: 26px; font-weight: 700; line-height: 1.1; }
+.tile .l { font-size: 12px; color: var(--muted); }
+.tile.overall.pass { background: var(--pass-bg); color: var(--pass-fg); border-color: transparent; }
+.tile.overall.warn { background: var(--warn-bg); color: var(--warn-fg); border-color: transparent; }
+.tile.overall.fail { background: var(--fail-bg); color: var(--fail-fg); border-color: transparent; }
+.tile.overall .n { font-size: 18px; }
+.tile.overall .l { color: inherit; }
+.facts { display: grid; grid-template-columns: max-content 1fr; gap: 4px 18px; margin: 14px 0 0; font-size: 13px; }
+.facts dt { color: var(--muted); } .facts dd { margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: start; font-size: 12px; color: var(--muted); font-weight: 600; padding: 7px 8px; border-bottom: 1px solid var(--border); background: var(--soft); }
+td { padding: 7px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+td.status { width: 104px; } td.check { width: 190px; font-weight: 600; }
+.action { color: var(--muted); margin-top: 3px; }
+.mono { font-family: ui-monospace,"Cascadia Mono",Consolas,monospace; font-size: 12px; word-break: break-all; }
+.records td:first-child { width: 30%; } .records td:nth-child(2) { width: 64px; } .records td:nth-child(4) { width: 84px; white-space: nowrap; word-break: normal; }
+.badge { display: inline-flex; align-items: center; gap: 6px; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.badge .dot { width: 7px; height: 7px; border-radius: 50%; }
+.badge.pass { background: var(--pass-bg); color: var(--pass-fg); } .badge.pass .dot { background: var(--pass-dot); }
+.badge.warn { background: var(--warn-bg); color: var(--warn-fg); } .badge.warn .dot { background: var(--warn-dot); }
+.badge.fail { background: var(--fail-bg); color: var(--fail-fg); } .badge.fail .dot { background: var(--fail-dot); }
+.badge.info { background: var(--info-bg); color: var(--info-fg); } .badge.info .dot { background: var(--info-dot); }
+ol.actions { margin: 0; padding-inline-start: 22px; } ol.actions li { margin: 6px 0; }
+.note { font-size: 12px; color: var(--muted); }
+footer { border-top: 1px solid var(--border); margin-top: 32px; padding: 14px 0; font-size: 12px; color: var(--muted); text-align: center; }
+@media screen and (prefers-color-scheme: dark) {
+  :root { --fg:#f3f7f8; --muted:#a7b8c2; --border:#2a3d4a; --soft:#1d2e39; --primary:#5fb3bb;
+    --pass-bg:#052e16; --pass-fg:#bbf7d0; --warn-bg:#451a03; --warn-fg:#fde68a; --fail-bg:#450a0a; --fail-fg:#fecaca; --info-bg:#172554; --info-fg:#bfdbfe; }
+  body { background: #0f1b24; }
+}
+@media (max-width: 760px) { .overview { grid-template-columns: 1fr 1fr; } }
+@media print {
+  body { font-size: 11px; } .wrap { max-width: none; padding: 0 12mm; }
+  header.band, .badge, .tile.overall { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  h2 { break-after: avoid; } tr { break-inside: avoid; }
+  @page { margin: 12mm 0; }
+}
+@media (forced-colors: active) { .badge { border: 1px solid CanvasText; } .badge .dot { background: CanvasText; } }
+</style>
+</head>
+<body>
+<header class="band"><div class="wrap">
+${logoDataUri ? `<img src="${logoDataUri}" alt="">` : ""}
+<div>
+<p class="kicker">Domain Health Report</p>
+<h1>${esc(r.domain)}</h1>
+<p class="meta">Checked ${esc(when)} using ${esc(resolver)}</p>
+</div>
+${companyLogoUri && /^data:image\/(png|jpeg);base64,[A-Za-z0-9+/=]+$/.test(companyLogoUri) ? `<img class="company" src="${companyLogoUri}" alt="${COMPANY}" width="232" height="34">` : ""}
+</div></header>
+<main class="wrap">
+
+<section aria-labelledby="sum-h">
+<h2 id="sum-h">Summary</h2>
+<div class="overview">
+<div class="tile overall ${overall}"><div class="n">${overallText}</div><div class="l">${items.length} checks</div></div>
+<div class="tile"><div class="n">${summary.fail}</div><div class="l">${badge("fail")}</div></div>
+<div class="tile"><div class="n">${summary.warn}</div><div class="l">${badge("warn")}</div></div>
+<div class="tile"><div class="n">${summary.pass}</div><div class="l">${badge("pass")}</div></div>
+<div class="tile"><div class="n">${summary.info}</div><div class="l">${badge("info")}</div></div>
+</div>
+<dl class="facts">
+<dt>Inbound mail</dt><dd>${esc(r.mxProviders.join(", ") || "None")}</dd>
+<dt>Sending services</dt><dd>${esc(r.senders.join(", ") || "None identified")}</dd>
+<dt>DNS hosting</dt><dd>${esc(r.nsProviders.join(", ") || "Unknown")}</dd>
+<dt>Website</dt><dd>${esc(r.websiteTargets.join(", ") || "No address")}</dd>
+<dt>Resolver</dt><dd>${esc(resolver)} · ${r.queryCount} queries</dd>
+</dl>
+</section>
+
+<section aria-labelledby="act-h">
+<h2 id="act-h">Recommended actions</h2>
+${actions.length ? `<ol class="actions">${actions.map((i) => `<li>${badge(i.status)} <strong>${esc(i.area)} – ${esc(i.check)}:</strong> ${esc(i.action)}</li>`).join("\n")}</ol>` : `<p>No failures or warnings. No action required.</p>`}
+</section>
+
+<section aria-labelledby="det-h">
+<h2 id="det-h">Checks</h2>
+${areas.map((area) => `<h3>${esc(area)}</h3>
+<table><thead><tr><th scope="col">Status</th><th scope="col">Check</th><th scope="col">Finding</th></tr></thead><tbody>
+${items.filter((i) => i.area === area).sort((x, y) => order[x.status] - order[y.status]).map((i) => `<tr><td class="status">${badge(i.status)}</td><td class="check">${esc(i.check)}</td><td>${esc(i.finding)}${i.action ? `<div class="action">${esc(i.action)}</div>` : ""}</td></tr>`).join("\n")}
+</tbody></table>`).join("\n")}
+</section>
+
+<section aria-labelledby="rec-h">
+<h2 id="rec-h">Records found</h2>
+${recordRows || "<p>No records found.</p>"}
+${missing.length ? `<h3>Not found</h3><p class="mono">${missing.map((x) => `${esc(x.name)} (${esc(x.type)})`).join(", ")}</p>` : ""}
+<p class="note">TTLs are as reported by ${esc(resolver)}: the time left before its cached copy expires, so they can be lower than the TTL set on the record. DKIM selectors and subdomains are checked against common names only; services using custom selectors or hostnames may not appear.</p>
+</section>
+</main>
+<footer>Copyright ${year} ${COMPANY}</footer>
+</body>
+</html>`;
+  }
+
+  const fileName = (r) => `Domain-Health-${r.domain}-${r.ranAt.slice(0, 10)}.html`;
+
+  window.DnsHealthReport = { assess, buildHtml, fileName };
+})();
+</script>
+<script>
+/* Domain DNS Checker — renderer UI. All text is set via textContent (never innerHTML). */
+"use strict";
+(() => {
+  const A = window.DnsAnalysis;
+  const SVGNS = "http://www.w3.org/2000/svg";
+  const $ = (id) => document.getElementById(id);
+
+  /* ---------- DOM helpers ---------- */
+  function h(tag, attrs, ...kids) {
+    const el = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs || {})) {
+      if (v == null || v === false) continue;
+      if (k === "class") el.className = v;
+      else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+      else el.setAttribute(k, v === true ? "" : String(v));
+    }
+    for (const kid of kids.flat()) if (kid != null && kid !== false) el.append(kid instanceof Node ? kid : String(kid));
+    return el;
+  }
+  function s(tag, attrs, ...kids) {
+    const el = document.createElementNS(SVGNS, tag);
+    for (const [k, v] of Object.entries(attrs || {})) if (v != null) el.setAttribute(k, String(v));
+    for (const kid of kids.flat()) if (kid != null) el.append(kid instanceof Node ? kid : String(kid));
+    return el;
+  }
+  const clip = (t, n = 120) => (t.length > n ? `${t.slice(0, n)}…` : t);
+  const TONE_LABEL = { success: "OK", warning: "Check", error: "Problem", info: "Note", neutral: "None" };
+  const TONE_STROKE = { success: "#16a34a", warning: "#f59e0b", error: "#dc2626", info: "#2563eb", neutral: "#94a3ab" };
+  const badge = (tone, text) =>
+    h("span", { class: `badge ${tone}` }, h("span", { class: "dot", "aria-hidden": "true" }), h("span", { class: "sr-only" }, `${TONE_LABEL[tone]}: `), text);
+
+  let toastTimer;
+  function toast(msg) {
+    const t = $("toast");
+    t.textContent = msg; t.hidden = false;
+    clearTimeout(toastTimer); toastTimer = setTimeout(() => (t.hidden = true), 2600);
+  }
+
+  /* ---------- state ---------- */
+  const state = { report: null, tab: "mail", showEmpty: false, running: false };
+
+  /* ---------- form setup ---------- */
+  const resolverSel = $("resolver");
+  for (const r of A.RESOLVERS) resolverSel.append(h("option", { value: r.id }, r.label));
+  resolverSel.value = "google";
+  $("sel-label").textContent = `Additional DKIM selectors (${A.DKIM_SELECTORS.length} checked by default)`;
+  $("hosts-label").textContent = `Additional subdomains (${A.SUBDOMAIN_HOSTS.length} checked by default)`;
+
+  const splitList = (t) => t.split(/[\s,;]+/).map((x) => x.trim().toLowerCase()).filter((x) => /^[a-z0-9_-]+(\.[a-z0-9_-]+)*$/.test(x));
+  const isIp = (t) => /^(\d{1,3}\.){3}\d{1,3}$/.test(t) || /^[0-9a-f:]+:[0-9a-f:]*$/i.test(t);
+
+  function showError(msg) {
+    const e = $("domain-err");
+    e.textContent = msg || ""; e.hidden = !msg;
+    $("domain").setAttribute("aria-invalid", msg ? "true" : "false");
+  }
+
+  $("lookup").addEventListener("submit", async (ev) => {
+    ev.preventDefault();
+    if (state.running) return;
+    const domain = A.normaliseDomain($("domain").value);
+    if (!A.isValidDomain(domain)) return showError("Enter a domain such as contoso.com");
+    let server = "";
+    if (resolverSel.value === "custom") {
+      server = $("custom-ip").value.trim();
+      if (!isIp(server)) return showError("Enter a valid resolver IP address");
+    } else server = A.RESOLVERS.find((r) => r.id === resolverSel.value).ip;
+    showError("");
+    $("domain").value = domain;
+
+    state.running = true;
+    $("run").disabled = true; $("run").textContent = "Checking…";
+    $("progress").hidden = false;
+    try {
+      const report = await A.runReport(domain, server, splitList($("sel").value), splitList($("hosts").value), (done, total) => {
+        $("bar-fill").style.width = `${total ? Math.round((done / total) * 100) : 0}%`;
+        $("progress-text").textContent = `${done} / ${total} queries`;
+      });
+      state.report = report;
+      const failed = report.results.filter((x) => x.status === -1).length;
+      if (failed === report.results.length) toast(`Could not reach ${A.resolverLabel(server)}. Try the other resolver.`);
+      render();
+      $("results").focus();
+    } catch (e) {
+      toast(`Lookup failed: ${e && e.message ? e.message : e}`);
+    } finally {
+      state.running = false;
+      $("run").disabled = false; $("run").textContent = "Check DNS";
+      $("progress").hidden = true;
+    }
+  });
+
+  /* ---------- findings ---------- */
+  function findings(r) {
+    const by = (g) => r.results.filter((x) => x.group === g);
+    const dkimOn = by("dkim").filter((x) => x.tone === "success");
+    const dkimHalf = by("dkim").filter((x) => x.tone === "warning");
+    const m365 = by("m365");
+    const m365Ok = m365.filter((x) => x.tone === "success").length;
+    const m365Off = m365.filter((x) => x.tone === "warning").length;
+    const dangling = by("subdomains").filter((x) => x.tone === "error" && x.cnames.length);
+    const mx = r.results.find((x) => x.id === "mx");
+    const sec = by("security").filter((x) => x.tone === "success").map((x) => x.label.split(" ")[0]);
+    const failed = r.results.filter((x) => x.status === -1).length;
+    const list = [
+      { label: "MX", tone: mx.tone, text: r.mxProviders.length ? r.mxProviders.join(", ") : mx.verdict, tab: "mail" },
+      { label: "SPF", tone: r.spf.tone, text: r.spf.records.length ? `${r.spf.verdict} · ${r.spf.lookups}/10 lookups` : r.spf.verdict, tab: "mail" },
+      { label: "DMARC", tone: r.dmarc.tone, text: r.dmarc.verdict, tab: "mail" },
+      {
+        label: "DKIM", tab: "dkim",
+        tone: dkimOn.length ? (dkimHalf.length ? "warning" : "success") : dkimHalf.length ? "warning" : "neutral",
+        text: dkimOn.length || dkimHalf.length
+          ? `${dkimOn.length} key${dkimOn.length === 1 ? "" : "s"} published${dkimHalf.length ? ` · ${dkimHalf.length} CNAME without key` : ""}`
+          : "No common selectors found",
+      },
+      { label: "Microsoft 365", tab: "m365", tone: m365Off ? "warning" : m365Ok ? "success" : "neutral", text: `${m365Ok} of ${m365.length} records match${m365Off ? ` · ${m365Off} differ` : ""}` },
+      { label: "Subdomains", tab: "subdomains", tone: dangling.length ? "error" : "success", text: dangling.length ? `${dangling.length} dangling CNAME${dangling.length > 1 ? "s" : ""}` : "No dangling CNAMEs" },
+      { label: "Transport", tab: "security", tone: sec.length ? "success" : "neutral", text: sec.length ? sec.join(", ") : "No MTA-STS, TLS-RPT or BIMI" },
+    ];
+    if (failed) list.unshift({ label: "Lookups", tone: "error", text: `${failed} queries failed`, tab: "web" });
+    return list;
+  }
+
+  /* ---------- mail-flow diagram ---------- */
+  function domainMap(report) {
+    const senders = report.senders.length ? report.senders : ["None identified"];
+    const shown = senders.slice(0, 7);
+    const more = senders.length - shown.length;
+    const inbound = report.mxProviders.length ? report.mxProviders.slice(0, 4) : ["No MX"];
+    const rows = Math.max(shown.length + (more ? 1 : 0), inbound.length, 3);
+    const rowH = 34, top = 44, W = 760, H = top + rows * rowH + 96;
+    const cx = W / 2, cy = top + (rows * rowH) / 2 - 6, boxW = 210, boxH = 92, leftX = 16, rightX = W - 16 - 190;
+    const sy = (i, n) => cy - ((n - 1) * rowH) / 2 + i * rowH;
+    const nL = shown.length + (more ? 1 : 0);
+    const cs = getComputedStyle(document.documentElement);
+    const c = (v) => cs.getPropertyValue(v).trim();
+    const desc = `Sending services: ${senders.join(", ")}. Mail received by: ${inbound.join(", ")}. SPF ${report.spf.verdict}. DMARC ${report.dmarc.verdict}. DNS hosted at ${report.nsProviders.join(", ") || "unknown"}.`;
+
+    const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-labelledby": "map-t map-d" },
+      s("title", { id: "map-t" }, `Mail flow for ${report.domain}`),
+      s("desc", { id: "map-d" }, desc),
+      s("defs", {}, s("marker", { id: "arrow", viewBox: "0 0 8 8", refX: 7, refY: 4, markerWidth: 7, markerHeight: 7, orient: "auto" }, s("path", { d: "M0,0 L8,4 L0,8 z", fill: c("--primary") }))),
+      s("text", { x: leftX, y: 24, fill: c("--muted-fg"), "font-size": 11, "font-weight": 600, "letter-spacing": 1 }, "SENDS AS THIS DOMAIN"),
+      s("text", { x: rightX, y: 24, fill: c("--muted-fg"), "font-size": 11, "font-weight": 600, "letter-spacing": 1 }, "RECEIVES MAIL VIA"),
+    );
+    shown.forEach((name, i) => {
+      const y = sy(i, nL), none = name === "None identified";
+      svg.append(
+        s("path", { d: `M ${leftX + 190} ${y} C ${cx - 150} ${y}, ${cx - 160} ${cy}, ${cx - boxW / 2} ${cy}`, fill: "none", stroke: none ? "#94a3ab" : c("--primary"), "stroke-width": 1.5, "stroke-dasharray": none ? "4 4" : null }),
+        s("rect", { x: leftX, y: y - 13, width: 190, height: 26, rx: 6, fill: c("--bg"), stroke: c("--border") }),
+        s("text", { x: leftX + 10, y: y + 4, "font-size": 12, fill: none ? c("--muted-fg") : c("--fg") }, clip(name, 26)),
+      );
+    });
+    if (more > 0) svg.append(s("text", { x: leftX + 10, y: sy(nL - 1, nL) + 4, "font-size": 12, fill: c("--muted-fg") }, `+${more} more`));
+    inbound.forEach((name, i) => {
+      const y = sy(i, inbound.length), none = name === "No MX";
+      svg.append(
+        s("path", { d: `M ${cx + boxW / 2} ${cy} C ${cx + 160} ${cy}, ${cx + 150} ${y}, ${rightX} ${y}`, fill: "none", stroke: none ? "#dc2626" : c("--primary"), "stroke-width": 1.5, "stroke-dasharray": none ? "4 4" : null, "marker-end": "url(#arrow)" }),
+        s("rect", { x: rightX, y: y - 13, width: 190, height: 26, rx: 6, fill: c("--bg"), stroke: c("--border") }),
+        s("text", { x: rightX + 10, y: y + 4, "font-size": 12, fill: c("--fg") }, clip(name, 26)),
+      );
+    });
+    svg.append(
+      s("rect", { x: cx - boxW / 2, y: cy - boxH / 2, width: boxW, height: boxH, rx: 10, fill: c("--card"), stroke: c("--fg"), "stroke-width": 1.5 }),
+      s("text", { x: cx, y: cy - 18, "text-anchor": "middle", "font-size": 14, "font-weight": 600, fill: c("--fg") }, clip(report.domain, 28)),
+    );
+    [
+      { k: "SPF", t: report.spf.tone, v: report.spf.all || (report.spf.records.length ? "redirect" : "missing") },
+      { k: "DMARC", t: report.dmarc.tone, v: report.dmarc.tags.p ? `p=${report.dmarc.tags.p}` : "missing" },
+    ].forEach((row, i) => {
+      svg.append(s("g", { transform: `translate(${cx - boxW / 2 + 14} ${cy + 2 + i * 22})` },
+        s("circle", { cx: 5, cy: -4, r: 4.5, fill: "none", stroke: TONE_STROKE[row.t], "stroke-width": 3 }),
+        s("text", { x: 16, y: 0, "font-size": 12, fill: c("--fg") }, s("tspan", { "font-weight": 600 }, row.k), `  ${row.v}`),
+      ));
+    });
+    svg.append(s("line", { x1: 16, x2: W - 16, y1: H - 80, y2: H - 80, stroke: c("--border") }));
+    [
+      { k: "DNS HOSTED AT", v: report.nsProviders.join(", ") || "Unknown" },
+      { k: "WEBSITE", v: report.websiteTargets.join(", ") || "No A record" },
+    ].forEach((f, i) => {
+      svg.append(s("g", { transform: `translate(${16 + i * 372} ${H - 52})` },
+        s("text", { "font-size": 11, "font-weight": 600, "letter-spacing": 1, fill: c("--muted-fg") }, f.k),
+        s("text", { y: 22, "font-size": 12, fill: c("--fg") }, clip(f.v, 56)),
+      ));
+    });
+    return h("figure", {}, h("figcaption", {}, `Mail flow for ${report.domain}`), h("div", { class: "map" }, svg));
+  }
+
+  /* ---------- tables & panels ---------- */
+  function ttlCell(r) {
+    const line = (label, sec) => h("div", { class: "val ttl", title: `${sec} seconds` }, label ? h("span", { class: "muted" }, `${label} `) : null, A.formatTtl(sec));
+    const out = [];
+    if (r.cnameTtls && r.cnameTtls.length) out.push(line("CNAME", Math.min(...r.cnameTtls)));
+    const vt = (r.ttls || []).filter((_, i) => !(r.type === "CNAME" && r.cnames.includes(r.values[i])));
+    if (vt.length) out.push(line(out.length ? r.type : "", Math.min(...vt)));
+    return out.length ? out : h("span", { class: "val muted" }, "—");
+  }
+
+  function resultsTable(rows, caption) {
+    const visible = state.showEmpty ? rows : rows.filter((r) => r.values.length || r.cnames.length || r.tone === "error");
+    const hidden = rows.filter((r) => !visible.includes(r));
+    const table = h("table", {},
+      h("caption", { class: "sr-only" }, caption),
+      h("thead", {}, h("tr", {},
+        h("th", { scope: "col", class: "w-name" }, "Name"), h("th", { scope: "col", class: "w-type" }, "Type"),
+        h("th", { scope: "col" }, "Records"),
+        h("th", { scope: "col", class: "w-ttl", title: "Time to live: how long the resolver will keep serving this answer from its cache" }, "TTL"),
+        h("th", { scope: "col", class: "w-res" }, "Result"))),
+      h("tbody", {}, visible.map((r) => h("tr", {},
+        h("td", {}, h("div", { class: "val" }, r.name), h("div", { class: "sub" }, r.service ? `${r.label} · ${r.service}` : r.label)),
+        h("td", { class: "val" }, r.type),
+        h("td", {},
+          r.cnames.map((cn) => h("div", { class: "val" }, h("span", { class: "muted" }, "CNAME → "), cn)),
+          r.values.filter((v) => !(r.type === "CNAME" && r.cnames.includes(v))).map((v) => h("div", { class: "val", title: v.length > 160 ? v : null }, clip(v, 160))),
+          !r.values.length && !r.cnames.length ? h("span", { class: "val muted" }, r.status === -1 ? (r.error || "—") : A.statusText(r.status)) : null,
+        ),
+        h("td", {}, ttlCell(r)),
+        h("td", {}, badge(r.tone, r.verdict)),
+      ))),
+    );
+    return h("div", {}, table,
+      hidden.length ? h("p", { class: "small muted" }, `${hidden.length} not found: `, h("span", { class: "mono" }, hidden.map((r) => r.label).join(", "))) : null);
+  }
+
+  function spfPanel(report) {
+    const { spf, dmarc } = report;
+    return h("div", { class: "cards2" },
+      h("section", { class: "card", "aria-labelledby": "spf-h" },
+        h("div", { class: "top" }, h("h3", { id: "spf-h" }, "SPF"), badge(spf.tone, spf.verdict)),
+        spf.records.map((r) => h("p", { class: "code" }, r)),
+        spf.records.length ? h("p", { class: "small" }, "DNS lookups: ", h("strong", {}, `${spf.lookups} of 10`)) : null,
+        spf.includes.length ? h("ul", { class: "incl" }, spf.includes.map((i) => h("li", {}, h("span", { class: "mono" }, i.domain), h("span", {}, i.service || "Unrecognised")))) : null,
+      ),
+      h("section", { class: "card", "aria-labelledby": "dmarc-h" },
+        h("div", { class: "top" }, h("h3", { id: "dmarc-h" }, "DMARC"), badge(dmarc.tone, dmarc.verdict)),
+        dmarc.records.map((r) => h("p", { class: "code" }, r)),
+        Object.keys(dmarc.tags).length
+          ? h("dl", { class: "kv" }, Object.entries(dmarc.tags).filter(([k]) => k !== "v").flatMap(([k, v]) => [h("dt", {}, k), h("dd", {}, v)]))
+          : null,
+      ),
+    );
+  }
+
+  function verifyPanel(report) {
+    if (!report.verifications.length) return h("p", { class: "muted" }, `No recognised verification tokens on ${report.domain} or www.${report.domain}.`);
+    return h("table", {},
+      h("caption", { class: "sr-only" }, "Verification tokens"),
+      h("thead", {}, h("tr", {}, h("th", { scope: "col", class: "w-svc" }, "Service"), h("th", { scope: "col" }, "Token"))),
+      h("tbody", {}, report.verifications.map((v) => h("tr", {}, h("td", {}, h("strong", {}, v.service)), h("td", { class: "val" }, v.value)))));
+  }
+
+  /* ---------- render ---------- */
+  function intro() {
+    return h("div", { class: "intro" }, [
+      ["Mail & authentication", "MX, SPF with recursive lookup count, DMARC policy and tags"],
+      ["Microsoft 365", "Autodiscover, Intune enrollment, Entra registration, Teams SIP and SRV"],
+      ["Sending services", `${A.DKIM_SELECTORS.length} DKIM selectors: M365, Google, SendGrid, Mailchimp, Mailgun, Brevo and more`],
+      ["Website & subdomains", "A, AAAA, NS, SOA, CAA, verification tokens and dangling CNAMEs"],
+    ].map(([t, b]) => h("div", {}, h("h2", {}, t), h("p", {}, b))));
+  }
+
+  function render() {
+    const root = $("results");
+    root.replaceChildren();
+    const report = state.report;
+    if (!report) { root.append(intro()); return; }
+
+    root.append(h("div", { class: "head" },
+      h("h1", {}, h("span", { class: "mono" }, report.domain), h("span", { class: "meta" }, `${report.queryCount} queries · ${A.resolverLabel(report.resolver)} · ${new Date(report.ranAt).toLocaleString()}`)),
+      h("div", { class: "actions" },
+        h("button", { class: "btn sm primary", type: "button", onclick: healthReport }, "Domain Health report"),
+        h("button", { class: "btn sm", type: "button", onclick: copyReport }, "Copy report"),
+        h("button", { class: "btn sm", type: "button", onclick: exportCsv }, "Export CSV"))));
+
+    root.append(h("div", { class: "overview" },
+      domainMap(report),
+      h("section", { "aria-labelledby": "findings-h" },
+        h("h2", { id: "findings-h", class: "h2" }, "Findings"),
+        h("ul", { class: "findings" }, findings(report).map((f) => h("li", {},
+          h("button", { type: "button", onclick: () => { state.tab = f.tab; render(); $(`tab-${f.tab}`).focus(); } },
+            h("span", { class: "k" }, f.label), badge(f.tone, f.text))))))));
+
+    const tabs = h("div", { class: "tabs", role: "tablist", "aria-label": "Record groups" },
+      A.GROUPS.map((g) => h("button", {
+        type: "button", role: "tab", id: `tab-${g.id}`, "aria-selected": String(state.tab === g.id), "aria-controls": "tabpanel",
+        tabindex: state.tab === g.id ? "0" : "-1",
+        onclick: () => { state.tab = g.id; render(); $(`tab-${g.id}`).focus(); },
+        onkeydown: (e) => {
+          const i = A.GROUPS.findIndex((x) => x.id === state.tab);
+          const n = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+          if (!n) return;
+          e.preventDefault();
+          state.tab = A.GROUPS[(i + n + A.GROUPS.length) % A.GROUPS.length].id;
+          render(); $(`tab-${state.tab}`).focus();
+        },
+      }, g.label)));
+    const toggle = h("label", { class: "toggle" },
+      h("input", { type: "checkbox", checked: state.showEmpty, onchange: (e) => { state.showEmpty = e.target.checked; render(); } }),
+      "Show not found");
+    root.append(h("div", { class: "tabsbar" }, tabs, toggle));
+
+    const g = A.GROUPS.find((x) => x.id === state.tab);
+    const panel = h("div", { class: "panel", role: "tabpanel", id: "tabpanel", "aria-labelledby": `tab-${g.id}` });
+    if (g.id === "mail") panel.append(spfPanel(report));
+    if (g.id === "verify") {
+      panel.append(verifyPanel(report), h("h3", { class: "h2" }, "All TXT records"),
+        resultsTable(report.results.filter((r) => r.id === "root-txt" || r.id === "www-txt"), "All TXT records"));
+    } else {
+      panel.append(resultsTable(report.results.filter((r) => r.group === g.id), g.label));
+    }
+    root.append(panel);
+  }
+
+  async function copyReport() {
+    if (!state.report) return;
+    try { await window.dnsApi.copy(A.toText(state.report)); toast("Report copied"); }
+    catch { toast("Could not copy to clipboard"); }
+  }
+  async function healthReport() {
+    if (!state.report) return;
+    const R = window.DnsHealthReport;
+    try {
+      const html = R.buildHtml(state.report, A, window.DNS_LOGO);
+      const p = await window.dnsApi.saveFile(R.fileName(state.report), html);
+      if (p) toast(`Saved ${p}`);
+    } catch { toast("Could not create the report"); }
+  }
+  async function exportCsv() {
+    if (!state.report) return;
+    const name = `dns-${state.report.domain}-${state.report.ranAt.slice(0, 10)}.csv`;
+    try { const p = await window.dnsApi.saveFile(name, A.toCsv(state.report)); if (p) toast(`Downloaded ${p}`); }
+    catch { toast("Could not save the file"); }
+  }
+
+  $("copy-year").textContent = String(new Date().getFullYear());
+  render();
+  $("domain").focus();
+})();
+
+</script>
+</body>
+</html>
